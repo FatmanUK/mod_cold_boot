@@ -1,0 +1,44 @@
+Cold Boot Pattern 00 - Wake Pulse
+
+Ch1: slow boot-pulse kick, with sparse closed hats
+Ch2: low C/G/A#/G#/F movement using PopBass
+Ch3: cold string bed changing underneath the pulse
+Ch4: two diagnostic bell hits, then a sweep into the next pattern
+
+1. Kick should feel steady, not frantic.
+2. PopBass should be audible but not dominate the pad.
+3. KorgString should give a cold suspended feel.
+4. ExBells on rows 24 and 44 should feel like warning pings, not a cheerful melody.
+5. Sweep on row 56 should lead forward without swallowing everything.
+
+If the hi-hat is too sharp:
+  Lower instrument 03 volume from 32 to 24.
+
+If the bells are too loud:
+  Lower instrument 06 volume from 42 to 34.
+
+If the sweep is too loud:
+  Lower instrument 08 volume from 34 to 26.
+
+If the bass is too weak:
+  Raise instrument 04 volume from 54 to 60.
+
+If the pad masks everything:
+  Lower instrument 05 volume from 40 to 32.
+
+Do not worry yet if it sounds sparse. Pattern 00 is only the machine waking up. Pattern 01 will introduce the proper thumping load-screen groove.
+
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 F06      | C-3 04 F91      | C-4 05 ...      | ...
+08 (08)      | C-4 01 ...      | C-3 04 ...      | ...             | ...
+12 (0C)      | C-5 03 ...      | ...             | ...             | ...
+16 (10)      | C-4 01 ...      | G-3 04 ...      | G-3 05 ...      | ...
+24 (18)      | C-4 01 ...      | A#3 04 ...      | ...             | G-4 06 ...
+28 (1C)      | C-5 03 ...      | ...             | ...             | ...
+32 (20)      | C-4 01 ...      | C-3 04 ...      | D#4 05 ...      | ...
+40 (28)      | C-4 01 ...      | G#3 04 ...      | ...             | ...
+44 (2C)      | C-5 03 ...      | ...             | ...             | D#5 06 ...
+48 (30)      | C-4 01 ...      | F-3 04 ...      | G-3 05 ...      | ...
+56 (38)      | C-4 01 ...      | G-3 04 ...      | ...             | C-4 08 ...
+60 (3C)      | C-5 03 ...      | ...             | ...             | ...
