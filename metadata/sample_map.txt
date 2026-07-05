@@ -9,8 +9,47 @@ Sample map:
 08  Sweep         7300 bytes    Volume 34    transition / noise tension
 Total        ~29.2 kB
 
-1. Kick should feel steady, not frantic.
-2. PopBass should be audible but not dominate the pad.
-3. KorgString should give a cold suspended feel.
-4. ExBells on rows 24 and 44 should feel like warning pings, not a cheerful melody.
-5. Sweep on row 56 should lead forward without swallowing everything.
+[x] Kick should feel steady, not frantic.
+[x] PopBass should be audible but not dominate the pad.
+[ ] KorgString should give a cold suspended feel.
+[x] ExBells on rows 24 and 44 should feel like warning pings, not a cheerful melody.
+[x] Sweep on row 56 should lead forward without swallowing everything.
+
+--
+
+I forgot to ask if any of the samples should be looped? And if so, which ones and which type of loop?
+
+--
+
+(Thought for a couple of seconds)
+
+Yes. For Cold Boot, only the sustained tonal samples should be looped.
+
+Use forward loops only. ProTracker MODs use simple forward looping, not ping-pong or fancy sustain modes. So in MilkyTracker, keep it old-school and set loop start plus loop end on the same straight segment.
+
+Recommended loop plan:
+
+01 BassDrum1: no loop
+02 Snare4: no loop
+03 CloseHiHat: no loop
+04 PopBass: loop it, forward loop
+05 KorgString: loop it, forward loop
+06 ExBells: no loop
+07 Stabs: no loop
+08 Sweep: no loop
+
+For the two looped samples:
+
+PopBass
+Loop the cleanest steady part of the waveform after the initial attack, ideally on a full cycle or a small integer number of cycles. If the sample is already a neat single-cycle bass, loop the whole stable region. If the beginning has a click or transient, start the loop after that. Keep the loop short and seamless.
+
+KorgString
+Loop a stable sustain region after the attack. This is the one most likely to benefit from a slightly longer loop than the bass. Again, aim for a smooth, repeatable section with no obvious wobble at the seam.
+
+A simple rule of thumb:
+
+bass loop: very short, tight, cycle-consistent
+pad loop: short to medium, smooth sustain
+everything else: one-shot
+
+If any ST-01 sample already arrives with loop markers that sound smooth, you can keep them. If not, just set them manually in MilkyTracker by zooming in and finding a clean zero-crossing area with minimal discontinuity. Tiny seam, big magic.

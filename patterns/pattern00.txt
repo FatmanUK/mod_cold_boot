@@ -5,19 +5,19 @@ Ch2: low C/G/A#/G#/F movement using PopBass
 Ch3: cold string bed changing underneath the pulse
 Ch4: two diagnostic bell hits, then a sweep into the next pattern
 
-If the hi-hat is too sharp:
+[x] If the hi-hat is too sharp:
   Lower instrument 03 volume from 32 to 24.
 
-If the bells are too loud:
+[x] If the bells are too loud:
   Lower instrument 06 volume from 42 to 34.
 
-If the sweep is too loud:
+[x] If the sweep is too loud:
   Lower instrument 08 volume from 34 to 26.
 
-If the bass is too weak:
+[x] If the bass is too weak:
   Raise instrument 04 volume from 54 to 60.
 
-If the pad masks everything:
+[x] If the pad masks everything:
   Lower instrument 05 volume from 40 to 32.
 
 Do not worry yet if it sounds sparse. Pattern 00 is only the machine waking up. Pattern 01 will introduce the proper thumping load-screen groove.
