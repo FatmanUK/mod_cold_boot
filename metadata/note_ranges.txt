@@ -1,0 +1,6 @@
+Note ranges:
+Bass:      C-3 to A#3 mostly
+Pad:       C-4 to G-4 mostly
+Stabs:     C-4 to C-5
+Chime:     G-4 to B-5
+Drums/FX:  Usually C-4 or C-5, depending on sample character

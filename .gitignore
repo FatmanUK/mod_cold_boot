@@ -1,0 +1,9 @@
+samples/
+ST-01/
+ignore/
+*.lha
+*.wav
+*.iff
+*.raw
+*.mod
+*.xm

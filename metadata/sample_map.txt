@@ -1,0 +1,10 @@
+Sample map:
+01  BassDrum1     1100 bytes    Volume 64    kick / low thump
+02  Snare4        2000 bytes    Volume 48    tight electronic snare
+03  CloseHiHat    1200 bytes    Volume 32    short closed hat
+04  PopBass       2700 bytes    Volume 54    main bass
+05  KorgString    4000 bytes    Volume 40    dark pad / suspense bed
+06  ExBells       3500 bytes    Volume 42    metallic diagnostic chime
+07  Stabs         7400 bytes    Volume 44    synth accent
+08  Sweep         7300 bytes    Volume 34    transition / noise tension
+Total        ~29.2 kB

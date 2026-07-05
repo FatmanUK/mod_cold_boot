@@ -1,0 +1,10 @@
+Pattern roles:
+00 - Wake Pulse: Sparse intro. Kick, low bass hints, cold pad fades in.
+01 - Main Thump A: Core groove. Thumping kick, bass pulse, restrained hat.
+02 - Main Thump B: Same machinery, slightly altered bass movement and more tension.
+03 - Dark Variation: Pad harmony shifts. Bell appears briefly. More suspense than melody.
+04 - Pressure Build: Denser hats, stab accents, rising energy.
+05 - Diagnostic Chime: The “computer is thinking dangerous thoughts” section. Bell motif over pulse.
+06 - Breakdown: Drums thin out. Bass and pad carry the unease.
+07 - Climax Pulse: Fullest version: kick, bass, hat, stabs/chimes.
+08 - Loop Return: Dissolves back toward Pattern 00 cleanly.

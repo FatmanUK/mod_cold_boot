@@ -1,0 +1,8 @@
+Song Title:      Cold Boot
+Format:          4-channel MOD / ProTracker-compatible
+Speed:           6
+BPM:             145 for now
+Channels:        4
+Pattern length:  64 rows (Len. 0x40h)
+Unique patterns: 00-08
+Order length:    13
