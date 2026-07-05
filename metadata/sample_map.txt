@@ -8,3 +8,9 @@ Sample map:
 07  Stabs         7400 bytes    Volume 44    synth accent
 08  Sweep         7300 bytes    Volume 34    transition / noise tension
 Total        ~29.2 kB
+
+1. Kick should feel steady, not frantic.
+2. PopBass should be audible but not dominate the pad.
+3. KorgString should give a cold suspended feel.
+4. ExBells on rows 24 and 44 should feel like warning pings, not a cheerful melody.
+5. Sweep on row 56 should lead forward without swallowing everything.

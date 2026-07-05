@@ -5,12 +5,6 @@ Ch2: low C/G/A#/G#/F movement using PopBass
 Ch3: cold string bed changing underneath the pulse
 Ch4: two diagnostic bell hits, then a sweep into the next pattern
 
-1. Kick should feel steady, not frantic.
-2. PopBass should be audible but not dominate the pad.
-3. KorgString should give a cold suspended feel.
-4. ExBells on rows 24 and 44 should feel like warning pings, not a cheerful melody.
-5. Sweep on row 56 should lead forward without swallowing everything.
-
 If the hi-hat is too sharp:
   Lower instrument 03 volume from 32 to 24.
 
