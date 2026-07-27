@@ -1,0 +1,57 @@
+---
+title: Cold Boot
+orderList:
+  - 0
+#  - 1
+#  - 2
+#  - 1
+#  - 3
+#  - 4
+#  - 2
+#  - 5
+#  - 3
+#  - 6
+#  - 4
+#  - 7
+#  - 8
+speed: 6
+bpm: 145
+instruments:
+  - id: 1
+    source: st01
+    name: ST-01/BassDrum1
+    volume: 64
+  - id: 2
+    source: st01
+    name: ST-01/Snare4
+    volume: 48
+  - id: 3
+    source: st01
+    name: ST-01/CloseHiHat
+    volume: 32
+  - id: 4
+    source: st01
+    name: ST-01/PopBass
+    volume: 60
+    start: 0x22a
+    length: 0xfd
+    # This gives an odd purring sound. I'm not sure it's right, but there are no pops, clicks or buzzes. So that's something.
+  - id: 5
+    source: st01
+    name: ST-01/KorgString
+    volume: 32
+    start: 0x2c3
+    length: 0xcdd
+    # This sounds great!
+  - id: 6
+    source: st01
+    name: ST-01/ExBells
+    volume: 42
+  - id: 7
+    source: st01
+    name: ST-01/Stabs
+    volume: 44
+  - id: 8
+    source: st01
+    name: ST-01/Sweep
+    volume: 34
