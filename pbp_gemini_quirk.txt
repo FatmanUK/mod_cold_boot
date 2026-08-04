@@ -1,0 +1,8 @@
+--
+
+[ Testing reveals a "classic Gemini quirk". If the bootstrap file appears mangled, try this:
+
+"Generate the Bootstrap Markdown File. Do not use Python code blocks, do not use variable assignments, and do not wrap the content in a script. Output the text directly as clean, standard Markdown prose."
+]
+
+--
