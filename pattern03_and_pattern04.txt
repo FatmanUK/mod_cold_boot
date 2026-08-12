@@ -1,0 +1,285 @@
+Patterns 00, 01, and 02 are now **auditioned and passing**. Your current MilkyTracker loop configuration and boosted `PopBass` volume are now the authoritative settings, even though the exact values are not recorded here.
+
+The remaining deferred check is:
+
+```text
+Pattern 02 -> Pattern 05
+Status: deferred until Pattern 05 exists
+```
+
+## Pattern 03: Dark Variation
+
+Pattern 03 pulls back from the regular groove. Each 16-row section has two kicks followed by a late snare, while the pad descends chromatically:
+
+```text
+D#4 -> D-4 -> C#4 -> C-4
+```
+
+Channel 4 alternates between bells and stabs using tritone relationships. This gives the section a colder, less settled character without introducing a conventional melody.
+
+Pattern 03 occurs twice:
+
+```text
+Pattern 01 -> Pattern 03 -> Pattern 04
+Pattern 05 -> Pattern 03 -> Pattern 06
+```
+
+Its ending is therefore deliberately unresolved enough to feed either a build or a breakdown.
+
+Everything not shown should remain empty.
+
+```text
+Cold Boot
+Pattern 03 - Dark Variation
+
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 F06      | C-3 04 F91      | D#4 05 ...      | ...
+04 (04)      | ...             | ...             | ...             | C-5 03 ...
+06 (06)      | C-4 01 ...      | ...             | ...             | ...
+08 (08)      | ...             | G-3 04 ...      | ...             | ...
+10 (0A)      | ...             | ...             | ...             | C-5 03 ...
+12 (0C)      | C-4 02 ...      | ...             | ...             | ...
+14 (0E)      | ...             | F#3 04 ...      | ...             | G-4 06 C20
+
+16 (10)      | C-4 01 ...      | G#3 04 ...      | D-4 05 ...      | ...
+20 (14)      | ...             | ...             | ...             | C-5 03 ...
+22 (16)      | C-4 01 ...      | ...             | ...             | ...
+24 (18)      | ...             | D#3 04 ...      | ...             | ...
+26 (1A)      | ...             | ...             | ...             | C-5 03 ...
+28 (1C)      | C-4 02 ...      | ...             | ...             | ...
+30 (1E)      | ...             | G-3 04 ...      | ...             | C#5 07 C18
+
+32 (20)      | C-4 01 ...      | F-3 04 ...      | C#4 05 ...      | ...
+36 (24)      | ...             | ...             | ...             | C-5 03 ...
+38 (26)      | C-4 01 ...      | ...             | ...             | ...
+40 (28)      | ...             | C-3 04 ...      | ...             | ...
+42 (2A)      | ...             | ...             | ...             | C-5 03 ...
+44 (2C)      | C-4 02 ...      | ...             | ...             | ...
+46 (2E)      | ...             | C#3 04 ...      | ...             | F#4 06 C20
+
+48 (30)      | C-4 01 ...      | D#3 04 ...      | C-4 05 ...      | ...
+52 (34)      | ...             | ...             | ...             | C-5 03 ...
+54 (36)      | C-4 01 ...      | ...             | ...             | ...
+56 (38)      | ...             | A#3 04 ...      | ...             | ...
+58 (3A)      | ...             | ...             | ...             | C-5 03 ...
+60 (3C)      | C-4 02 ...      | ...             | ...             | ...
+62 (3E)      | ...             | G-3 04 ...      | ...             | C-5 07 C18
+```
+
+The additional effect is:
+
+```text
+C18 = set channel volume to hexadecimal 18
+    = decimal 24
+```
+
+That keeps the two `Stabs` events quieter than their normal sample volume. The `ExBells` remain at the already-tested `C20`.
+
+The intended shape is:
+
+```text
+Rows 00-15:
+D# pad, C pedal, then an F# bass tension note
+Bell at G-4
+
+Rows 16-31:
+Pad slips down to D
+Bass moves through G# and D#
+Stab answers at C#5
+
+Rows 32-47:
+Pad descends to C#
+Bass touches C and C#
+Bell answers at F#4
+
+Rows 48-63:
+Pad reaches C
+Bass moves D# -> A# -> G
+Final C-5 stab leaves the phrase unresolved
+```
+
+Current status after this addition:
+
+```text
+Pattern 00: PASS
+Pattern 01: PASS
+Pattern 02: PASS
+Pattern 02 -> Pattern 05 transition: DEFERRED
+Pattern 03: COMPOSED, NOT YET AUDITIONED
+```
+
+
+-----
+
+
+## Pattern 04: Pressure Build
+
+Pattern 04 increases tension in four stages. The drums and hats become progressively denser, the bass climbs through four chromatic minor centres, and the pad introduces a classic ProTracker minor-chord arpeggio.
+
+It must work in two places:
+
+```text
+Pattern 03 -> Pattern 04 -> Pattern 02
+Pattern 06 -> Pattern 04 -> Pattern 07
+```
+
+The ending therefore sits on a strong `G-3` bass tension, ready to resolve into a C-centred following pattern.
+
+Everything not shown remains empty.
+
+```text
+Cold Boot
+Pattern 04 - Pressure Build
+
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 F06      | C-3 04 F91      | C-4 05 037      | ...
+01 (01)      | ...             | ...             | ... .. 037      | ...
+02 (02)      | ...             | ...             | ...             | C-5 03 ...
+04 (04)      | ...             | C-3 04 ...      | ...             | ...
+06 (06)      | C-4 01 ...      | ...             | ...             | ...
+08 (08)      | C-4 02 ...      | G-3 04 ...      | ... .. 037      | ...
+09 (09)      | ...             | ...             | ... .. 037      | ...
+10 (0A)      | ...             | ...             | ...             | C-5 03 ...
+12 (0C)      | C-4 01 ...      | D#3 04 ...      | ...             | ...
+14 (0E)      | ...             | G-3 04 ...      | ...             | F#4 07 C18
+
+16 (10)      | C-4 01 ...      | C#3 04 ...      | C#4 05 037      | ...
+17 (11)      | ...             | ...             | ... .. 037      | ...
+18 (12)      | ...             | ...             | ... .. 037      | C-5 03 ...
+20 (14)      | C-4 01 ...      | G#3 04 ...      | ...             | ...
+22 (16)      | C-4 01 ...      | ...             | ...             | C-5 03 ...
+24 (18)      | C-4 02 ...      | E-3 04 ...      | ... .. 037      | ...
+25 (19)      | ...             | ...             | ... .. 037      | ...
+26 (1A)      | ...             | ...             | ... .. 037      | C-5 03 ...
+28 (1C)      | C-4 01 ...      | C#3 04 ...      | ...             | ...
+30 (1E)      | C-4 01 ...      | G#3 04 ...      | ...             | G-4 07 C1C
+
+32 (20)      | C-4 01 ...      | D-3 04 ...      | D-4 05 037      | ...
+33 (21)      | ...             | ...             | ... .. 037      | ...
+34 (22)      | ...             | ...             | ... .. 037      | C-5 03 ...
+35 (23)      | ...             | ...             | ... .. 037      | ...
+36 (24)      | C-4 01 ...      | A-3 04 ...      | ...             | C-5 03 ...
+38 (26)      | C-4 01 ...      | ...             | ...             | ...
+40 (28)      | C-4 02 ...      | F-3 04 ...      | ... .. 037      | ...
+41 (29)      | ...             | ...             | ... .. 037      | ...
+42 (2A)      | ...             | ...             | ... .. 037      | C-5 03 ...
+43 (2B)      | ...             | ...             | ... .. 037      | ...
+44 (2C)      | C-4 01 ...      | D-3 04 ...      | ...             | C-5 03 ...
+46 (2E)      | C-4 01 ...      | A-3 04 ...      | ...             | G#4 07 C20
+
+48 (30)      | C-4 01 ...      | D#3 04 ...      | D#4 05 037      | ...
+49 (31)      | ...             | ...             | ... .. 037      | ...
+50 (32)      | ...             | ...             | ... .. 037      | C-5 03 ...
+51 (33)      | ...             | ...             | ... .. 037      | ...
+52 (34)      | C-4 01 ...      | A#3 04 ...      | ... .. 037      | C-5 03 ...
+53 (35)      | ...             | ...             | ... .. 037      | ...
+54 (36)      | C-4 01 ...      | ...             | ... .. 037      | C-5 03 ...
+55 (37)      | ...             | ...             | ... .. 037      | ...
+56 (38)      | C-4 02 ...      | F#3 04 ...      | ... .. 037      | ...
+57 (39)      | ...             | ...             | ... .. 037      | ...
+58 (3A)      | C-4 01 ...      | D#3 04 ...      | ... .. 037      | C-5 03 ...
+59 (3B)      | ...             | ...             | ... .. 037      | ...
+60 (3C)      | C-4 01 ...      | A#3 04 ...      | ... .. 037      | C-5 03 ...
+61 (3D)      | ...             | ...             | ... .. 037      | ...
+62 (3E)      | C-4 01 ...      | G-3 04 ...      | ... .. 037      | A-4 07 C24
+63 (3F)      | ...             | ...             | ... .. 037      | ...
+```
+
+### New effect: `037`
+
+```text
+037 = arpeggio
+
+0 = effect number
+3 = play three semitones above the base note
+7 = play seven semitones above the base note
+```
+
+For example:
+
+```text
+C-4 05 037
+```
+
+cycles rapidly through:
+
+```text
+C-4
+D#4
+G-4
+```
+
+That produces a C-minor chord from a single channel. At Speed 6, ProTracker cycles through the three pitches twice during each row.
+
+An effect-only event such as:
+
+```text
+... .. 037
+```
+
+continues applying the arpeggio to the pad note already playing on that channel.
+
+### Stab-volume rise
+
+The four stabs gradually become louder:
+
+```text
+C18 = decimal 24
+C1C = decimal 28
+C20 = decimal 32
+C24 = decimal 36
+```
+
+Their pitches also rise chromatically:
+
+```text
+F#4 -> G-4 -> G#4 -> A-4
+```
+
+Each is a tritone above its current pad root, preserving the cold, unstable character.
+
+### Intended pressure curve
+
+```text
+Rows 00-15:
+C minor centre
+Sparse hats
+Short arpeggio flashes
+
+Rows 16-31:
+C# minor centre
+More kick activity
+Longer arpeggio bursts
+
+Rows 32-47:
+D minor centre
+Denser percussion
+Stronger stab
+
+Rows 48-63:
+D# minor centre
+Continuous pad arpeggio
+Maximum drum density
+G-3 bass ending prepares the next pattern
+```
+
+If the continuous `037` effect in rows 48–63 feels too buzzy with your particular `KorgString`, the conservative adjustment is to remove it from the odd-numbered rows:
+
+```text
+49, 51, 53, 55, 57, 59, 61, 63
+```
+
+That preserves the build while making the final arpeggio pulse every other row.
+
+Current validation state:
+
+```text
+Pattern 00: PASS
+Pattern 01: PASS
+Pattern 02: PASS
+Pattern 03: COMPOSED, AWAITING AUDITION
+Pattern 04: COMPOSED, AWAITING AUDITION
+Pattern 02 -> Pattern 05: DEFERRED
+```
