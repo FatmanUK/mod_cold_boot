@@ -2,12 +2,12 @@
 title: Cold Boot
 orderList:
   - 0
-#  - 1
-#  - 2
-#  - 1
-#  - 3
-#  - 4
-#  - 2
+  - 1
+  - 2
+  - 1
+  - 3
+  - 4
+  - 2
 #  - 5
 #  - 3
 #  - 6
@@ -32,10 +32,10 @@ instruments:
   - id: 4
     source: st01
     name: ST-01/PopBass
-    volume: 60
-    start: 0x22a
-    length: 0xfd
-    # This gives an odd purring sound. I'm not sure it's right, but there are no pops, clicks or buzzes. So that's something.
+    volume: 64
+    start: 0x32a
+    length: 0x4fa
+    # This gives an odd purring sound. I'm not sure it's right, but there are no pops, clicks or buzzes. So that's something. 0x22a(0xfd)? quiet purr. 0xba(0xf4)? burbly. 32a(4fa)? bit quiet.
   - id: 5
     source: st01
     name: ST-01/KorgString

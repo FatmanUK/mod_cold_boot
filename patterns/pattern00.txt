@@ -22,7 +22,7 @@ Ch4: two diagnostic bell hits, then a sweep into the next pattern
 
 Do not worry yet if it sounds sparse. Pattern 00 is only the machine waking up. Pattern 01 will introduce the proper thumping load-screen groove.
 
-Row      | Ch1             | Ch2             | Ch3             | Ch4
+   Row   | Ch1             | Ch2             | Ch3             | Ch4
 ---------+-----------------+-----------------+-----------------+-----------------
 00       | C-4 01 ...      | C-3 04 ...      | C-4 05 ...      | ...
 08       | C-4 01 ...      | C-3 04 ...      | ...             | ...
