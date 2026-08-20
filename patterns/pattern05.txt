@@ -183,22 +183,11 @@ The retained `D#4` pad ties the two patterns together while the bass resolves fr
 ### Audition checklist
 
 ```text
-[ ] Pattern 02 -> Pattern 05 transition is smooth
-[ ] Diagnostic motif is clear without sounding cheerful
-[ ] ExBells density does not overwhelm the rhythm
-[ ] C1C notes remain audible
-[ ] Chromatic pad rise works
-[ ] Pattern 05 -> Pattern 03 transition is smooth
-[ ] Repeated D#4 pad at the boundary does not click unpleasantly
-```
-
-Current state:
-
-```text
-Pattern 00 — Wake Pulse          PASS
-Pattern 01 — Main Thump A        PASS
-Pattern 02 — Main Thump B        PASS
-Pattern 03 — Dark Variation      PASS
-Pattern 04 — Pressure Build      PASS
-Pattern 05 — Diagnostic Chime    COMPOSED, AWAITING AUDITION
+[x] Pattern 02 -> Pattern 05 transition is smooth
+[x] Diagnostic motif is clear without sounding cheerful
+[x] ExBells density does not overwhelm the rhythm
+[x] C1C notes remain audible
+[x] Chromatic pad rise works
+[x] Pattern 05 -> Pattern 03 transition is smooth
+[x] Repeated D#4 pad at the boundary does not click unpleasantly
 ```

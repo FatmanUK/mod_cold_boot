@@ -1,4 +1,4 @@
-Cold Boot Pattern 00 - Wake Pulse
+## Pattern 00: Wake Pulse
 
 Ch1: slow boot-pulse kick, with sparse closed hats
 Ch2: low C/G/A#/G#/F movement using PopBass
