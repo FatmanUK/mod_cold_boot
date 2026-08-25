@@ -1,0 +1,230 @@
+## Pattern 08: Loop Return
+
+Pattern 08 has one job, which naturally requires four separate jobs because tracker music refuses administrative simplicity:
+
+1. Resolve Pattern 07’s final G-major tension into C minor.
+2. Reduce rhythmic and harmonic density in stages.
+3. Re-establish a sparse dominant pulse.
+4. Hand the module back to Pattern 00 without an obvious seam.
+
+Its energy curve is:
+
+```text
+Rows 00–15   Climax release
+Rows 16–31   Cooling
+Rows 32–47   Near-idle state
+Rows 48–63   Reboot pre-roll
+```
+
+Everything not listed remains empty.
+
+```text
+Cold Boot
+Pattern 08 - Loop Return
+
+   Row   | Ch1             | Ch2             | Ch3             | Ch4
+---------+-----------------+-----------------+-----------------+-----------------
+00       | C-4 01 F06      | C-3 04 F91      | C-4 05 037      | C-5 06 C20
+01       | ...             | ...             | ... .. 037      | ...
+02       | ...             | ...             | ... .. 037      | C-5 03 ...
+03       | ...             | ...             | ... .. 037      | ...
+04       | C-4 01 ...      | G-3 04 ...      | ... .. C24      | ...
+06       | ...             | ...             | ...             | C-5 03 ...
+08       | C-4 02 ...      | D#3 04 ...      | ... .. C20      | ...
+10       | ...             | ...             | ...             | C-5 03 ...
+12       | C-4 01 ...      | A#3 04 ...      | ... .. C1C      | ...
+14       | ...             | G-3 04 ...      | ...             | C-5 03 ...
+15       | ...             | ...             | ...             | B-4 06 C1C
+
+16       | C-4 01 ...      | G#3 04 ...      | G#3 05 C20      | ...
+18       | ...             | ...             | ...             | C-5 03 ...
+20       | ...             | D#3 04 ...      | ...             | ...
+22       | C-4 01 ...      | ...             | ...             | ...
+23       | ...             | ...             | ...             | A#4 06 C18
+24       | C-4 02 ...      | B-3 04 ...      | ... .. C1C      | ...
+26       | ...             | ...             | ...             | C-5 03 ...
+28       | C-4 01 ...      | F#3 04 ...      | ...             | ...
+30       | ...             | D#3 04 ...      | ... .. C18      | C-5 03 ...
+
+32       | C-4 01 ...      | F-3 04 ...      | F-3 05 C18      | ...
+34       | ...             | ...             | ...             | C-5 03 ...
+39       | ...             | ...             | ...             | A-4 06 C14
+40       | C-4 02 ...      | C-3 04 ...      | ... .. C14      | ...
+42       | ...             | ...             | ...             | C-5 03 ...
+44       | C-4 01 ...      | ...             | ...             | ...
+46       | ...             | G-3 04 ...      | ... .. C10      | ...
+
+48       | C-4 01 ...      | D#3 04 ...      | G-3 05 C18      | ...
+52       | ...             | F-3 04 ...      | ...             | C-5 03 ...
+55       | ...             | ...             | ...             | G-4 06 C10
+56       | C-4 01 ...      | G-3 04 ...      | ... .. C14      | ...
+60       | ...             | G-3 04 ...      | ... .. C10      | C-4 08 C14
+63       | ...             | ...             | ...             | ... .. C00
+```
+
+## Pattern 07 → Pattern 08
+
+Pattern 07 ends with:
+
+```text
+G-3 bass
+G-major 047 arpeggio
+C#5 Stab
+```
+
+Pattern 08 immediately replaces that with:
+
+```text
+C-3 bass
+C-minor 037 arpeggio
+C-5 ExBells
+Kick
+```
+
+The final `C#5` stab resolves downward by one semitone to the `C-5` bell. At the same moment, the harmony resolves from G major to C minor.
+
+This should sound decisive rather than gentle. It is the climax releasing its grip.
+
+## Pad reduction
+
+The pad begins with four rows of C-minor arpeggio:
+
+```text
+Rows 00–03   C-4 037
+```
+
+It then loses both harmonic activity and volume:
+
+```text
+Row 04   C24 = decimal 36
+Row 08   C20 = decimal 32
+Row 12   C1C = decimal 28
+```
+
+The following sections continue the retreat:
+
+```text
+G#3 pad:
+C20 -> C1C -> C18
+
+F-3 pad:
+C18 -> C14 -> C10
+
+G-3 final pad:
+C18 -> C14 -> C10
+```
+
+The small volume lift at row 48 is intentional. It introduces the final quiet G-based tension before Pattern 00 resolves back to C.
+
+These are channel-volume changes only. They do not alter your tested sample-volume settings.
+
+## Descending diagnostic residue
+
+The bell pitches descend as the system settles:
+
+```text
+C-5
+B-4
+A#4
+A-4
+G-4
+```
+
+Their volume also falls:
+
+```text
+C20
+C1C
+C18
+C14
+C10
+```
+
+The diagnostic voice is therefore still present, but increasingly distant.
+
+## Final eight rows
+
+The final section is deliberately sparse:
+
+```text
+Row 56   Kick, G-3 bass, quieter G-3 pad
+Row 60   G-3 bass, pad reduced again, quiet Sweep
+Row 63   C00 cuts the Sweep channel
+```
+
+`C00` sets Channel 4’s volume to zero. This prevents the sweep from spilling across the loop boundary.
+
+Pattern 00’s first Channel 4 event includes an instrument number:
+
+```text
+C-5 03
+```
+
+so the hi-hat restores its own normal sample volume when it arrives. The `C00` does not permanently silence the channel, despite the tracker briefly behaving like it has discovered passive aggression.
+
+## Pattern 08 → Pattern 00
+
+Pattern 08 ends with:
+
+```text
+G-3 bass
+quiet G-3 pad
+Channel 4 silenced
+no active drum hit
+```
+
+Pattern 00 begins with:
+
+```text
+C-3 bass
+C-4 pad
+Kick
+```
+
+That creates a sparse dominant-to-tonic resolution:
+
+```text
+G -> C
+```
+
+The pad also returns from its reduced `C10` volume to its tested instrument volume when Pattern 00 retriggers `KorgString`.
+
+## Audition checklist
+
+```text
+[ ] Pattern 07 -> Pattern 08 resolution feels forceful and intentional
+[ ] C#5 Stab -> C-5 ExBells semitone resolution works
+[ ] C-minor arpeggio releases the G-major tension cleanly
+[ ] Energy decreases clearly across all four sections
+[ ] Pad-volume steps sound smooth rather than abrupt
+[ ] Descending bell sequence remains audible as it fades
+[ ] Sparse rows 32–47 remain tense
+[ ] Sweep at row 60 is quiet and controlled
+[ ] C00 at row 63 cuts the Sweep cleanly
+[ ] Pattern 08 -> Pattern 00 transition is seamless
+[ ] Full order list can loop twice without an obvious restart
+[ ] Overall composition feels complete after Pattern 08
+```
+
+For the decisive test, play the entire order list at least twice:
+
+```text
+00 01 02 01 03 04 02 05 03 06 04 07 08
+00 01 02 ...
+```
+
+Current state:
+
+```text
+Pattern 00 — Wake Pulse          PASS
+Pattern 01 — Main Thump A        PASS
+Pattern 02 — Main Thump B        PASS
+Pattern 03 — Dark Variation      PASS
+Pattern 04 — Pressure Build      PASS
+Pattern 05 — Diagnostic Chime    PASS
+Pattern 06 — Breakdown           PASS
+Pattern 07 — Climax Pulse        PROVISIONAL PASS
+Pattern 08 — Loop Return         COMPOSED, AWAITING AUDITION
+```
+
+Once Pattern 08, both boundary transitions, and the complete two-cycle playback pass audition, **Cold Boot’s composition is complete**.
