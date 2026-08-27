@@ -1,201 +1,214 @@
-# Pattern 08: Release and Return
+# Pattern 08: Release, Echo, Return
 
-Pattern 08 now provides a genuine reward before it begins reducing energy.
+Pattern 08 now begins with a half-time C-minor statement.
 
-Its four stages are:
+Its first and second sixteen-row phrases use the same rhythmic and melodic structure:
 
 ```text
-Rows 00–15   C-minor payoff
-Rows 16–31   quieter echo
-Rows 32–47   intro-like sparse pulse
-Rows 48–63   exact rhythmic pre-roll into Pattern 00
+Rows 00–15: full statement
+Rows 16–31: quieter echo
 ```
 
-The last 32 rows deliberately adopt Pattern 00’s spacing and texture. This is the crucial change. Pattern 00 should now feel like the next phrase rather than a different tune suddenly barging into the room.
+The final 32 rows move into Pattern 00’s sparse eight-row pulse.
 
 Everything not shown remains empty.
 
 ```text
 Cold Boot
-Pattern 08 - Release and Return
+Pattern 08 - Release, Echo, Return
 
    Row   | Ch1             | Ch2             | Ch3             | Ch4
 ---------+-----------------+-----------------+-----------------+-----------------
-00       | C-4 01 F06      | C-3 04 F91      | C-4 05 037      | C-5 06 C28
+00       | C-4 01 C30      | C-3 04 C40      | C-4 05 C28      | D#5 06 C28
 01       | ...             | ...             | ... .. 037      | ...
 02       | ...             | ...             | ... .. 037      | ...
-03       | ...             | ...             | ... .. 037      | G-4 06 C20
-04       | C-4 01 ...      | G-3 04 ...      | ... .. 037      | ...
-05       | ...             | ...             | ... .. 037      | ...
-06       | ...             | ...             | ... .. 037      | ...
-07       | ...             | ...             | ... .. 037      | D#5 06 C24
-08       | C-4 02 ...      | D#3 04 ...      | C-4 05 ...      | ...
-11       | ...             | ...             | ...             | C-5 06 C20
-12       | C-4 01 ...      | G-3 04 ...      | ...             | ...
-15       | ...             | ...             | ...             | G-4 07 C1C
+03       | ...             | ...             | ... .. 037      | ...
+04       | ...             | G-3 04 C40      | ...             | ...
+08       | C-4 02 C28      | D#3 04 C40      | ...             | ...
+12       | C-4 01 C2C      | G-3 04 C40      | ...             | C-5 06 C18
 
-16       | C-4 01 ...      | G#3 04 ...      | G#3 05 037      | ...
-18       | ...             | ...             | ... .. 037      | C-5 03 C18
-20       | ...             | D#3 04 ...      | ... .. 037      | ...
-22       | C-4 01 ...      | ...             | ... .. 037      | ...
-23       | ...             | ...             | ...             | A#4 06 C1C
-24       | C-4 02 ...      | A#3 04 ...      | G#3 05 C24      | ...
-26       | ...             | ...             | ...             | C-5 03 C18
-28       | C-4 01 ...      | G-3 04 ...      | ...             | ...
-30       | ...             | ...             | ...             | G-4 06 C18
+16       | C-4 01 C28      | C-3 04 C38      | C-4 05 C20      | D#5 06 C1C
+17       | ...             | ...             | ... .. 037      | ...
+18       | ...             | ...             | ... .. 037      | ...
+19       | ...             | ...             | ... .. 037      | ...
+20       | ...             | G-3 04 C38      | ...             | ...
+24       | C-4 02 C20      | D#3 04 C38      | ... .. C20      | ...
+28       | C-4 01 C24      | G-3 04 C38      | ...             | C-5 06 C14
 
-32       | C-4 01 ...      | F-3 04 ...      | F-3 05 C24      | ...
-40       | C-4 01 ...      | C-3 04 ...      | ...             | ...
-44       | ...             | ...             | ...             | A-4 06 C14
-46       | ...             | G-3 04 ...      | ...             | ...
+32       | C-4 01 C2C      | F-3 04 C38      | F-3 05 C20      | ...
+40       | C-4 01 C2C      | C-3 04 C38      | G-3 05 C1C      | ...
+44       | ...             | ...             | ...             | C-5 03 C14
+46       | ...             | G-3 04 C38      | ...             | ...
 
-48       | C-4 01 ...      | F-3 04 ...      | G-3 05 C24      | ...
-56       | C-4 01 ...      | G-3 04 ...      | ...             | ...
+48       | C-4 01 C30      | F-3 04 C38      | G-3 05 C18      | ...
+56       | C-4 01 C30      | G-3 04 C38      | ...             | ...
 60       | ...             | ...             | ...             | C-5 03 C18
 ```
 
-# Why this Pattern 08 should work better
+## Pattern 07 to Pattern 08 resolution
 
-## 1. Pattern 07 finally receives a payoff
+The resolution no longer depends on a lone `B-4 -> C-5` motion.
 
 Pattern 07 ends with:
 
 ```text
-G-major dominant harmony
-G-3 bass
-B-4 Stab
+G bass
+G-major pad containing B
+F-5 bell
 ```
 
 Pattern 08 begins with:
 
 ```text
-C-minor harmony
-C-3 bass
-C-5 ExBells
+C bass
+C-minor pad containing D#
+D#5 bell
 ```
 
-The important resolutions are:
+The voice leading is:
 
 ```text
-B-4 -> C-5
-G major -> C minor
-G-3 bass -> C-3 bass
+B  -> C
+F  -> D#
+G  -> C
 ```
 
-The opening eight rows maintain a full C-minor arpeggio, while the bells outline:
+The audible top-note resolution is now:
 
 ```text
-C-5
-G-4
-D#5
-C-5
+F-5 -> D#5
 ```
 
-That is the release the previous version lacked.
+while the pad handles the leading-tone movement internally.
 
-## 2. Energy reduction happens through orchestration
+That is a proper dominant-seventh resolution into C minor, rather than asking one rather ordinary stab to carry the emotional weight of the entire module. It had neither the training nor the temperament.
 
-The earlier Pattern 08 used a staircase of volume changes and increasingly empty sections. That sounded engineered rather than musical.
+## The climax release
 
-The new version reduces energy by changing what the channels do:
+Rows 00–15 use only:
 
 ```text
-Rows 00–07:
-continuous arpeggio and four-note bell statement
-
-Rows 08–15:
-sustained pad and final answer
-
-Rows 16–23:
-shorter arpeggio echo
-
-Rows 24–31:
-sustained pad, fewer chimes
-
-Rows 32–47:
-sparse kick/bass/pad structure
-
-Rows 48–63:
-Pattern 00-style pulse
+Kick
+Snare
+PopBass
+KorgString
+Two ExBells notes
 ```
 
-There is no sudden “now entering the quiet section” sign nailed to the music.
-
-## 3. The loop inherits Pattern 00’s rhythmic DNA
-
-The final sixteen rows are:
+There are:
 
 ```text
-Row 48   Kick, F-3 bass, G-3 pad
-Row 56   Kick, G-3 bass
-Row 60   Quiet hi-hat
+No hats
+No Stabs
+No continuous wall of arpeggio
 ```
 
-Pattern 00 begins:
+The pad begins as a plain `C-4` at reduced volume. The arpeggio enters on rows 01–03, after the bell and kick transients. This should create a chord bloom instead of all four channels shouting on row 00.
+
+The half-time drum shape is:
 
 ```text
-Row 00   Kick, C-3 bass, C-4 pad
-Row 08   Kick, C-3 bass
-Row 12   Hi-hat
+Row 00   kick
+Row 08   snare
+Row 12   kick
 ```
 
-Across the boundary, the kicks therefore continue every eight rows:
+That should feel broad and conclusive.
+
+## The actual echo
+
+Rows 16–31 repeat the same layout exactly sixteen rows later:
 
 ```text
-Pattern 08 row 48
-Pattern 08 row 56
-Pattern 00 row 00
-Pattern 00 row 08
+00 -> 16   kick, C bass, C pad, D# bell
+04 -> 20   G bass
+08 -> 24   snare, D# bass
+12 -> 28   kick, G bass, C bell
 ```
 
-The harmonic handoff is:
+The echo uses lower values throughout:
 
 ```text
-F -> G -> C
+Bass:  C40 -> C38
+Pad:   C28 -> C20
+Bell:  C28/C18 -> C1C/C14
+Drums: C30/C28/C2C -> C28/C20/C24
 ```
 
-The rhythmic feel is already Pattern 00’s feel before Pattern 00 arrives.
+This should read as the first phrase reflecting back from farther away, not merely as “the next quiet bit.”
 
-# Revised audition checklist
+## Return to Pattern 00
 
-## Pattern 07 → Pattern 08
+Rows 32–63 use the same sparse timing vocabulary as Pattern 00:
 
 ```text
-[ ] B-4 -> C-5 resolution is satisfying
-[ ] G-major -> C-minor resolution provides a genuine payoff
-[ ] Opening bell statement feels earned
-[ ] Pattern 08 begins broadly rather than immediately collapsing
+Row 32   kick, bass, pad
+Row 40   kick, bass, pad
+Row 44   hat
+Row 48   kick, bass, pad
+Row 56   kick, bass
+Row 60   hat
 ```
 
-## Pattern 08 energy curve
+The final bass movement is:
 
 ```text
-[ ] Rows 00–15 provide a clear climax release
-[ ] Rows 16–31 feel like a reduced echo
-[ ] Rows 32–47 become sparse without an awkward step
-[ ] Rows 48–63 already feel like Pattern 00
+F -> C -> G
+F -> G
+then Pattern 00: C
 ```
 
-## Final loop
+The final loop will probably remain perceptible to someone actively listening for it. The goal is now that it feels like the pulse has slowed, turned over, and begun another cycle, rather than that MilkyTracker reached the end of a list and started reading it again.
+
+# Audition checklist
+
+## Pattern 04 to Pattern 07
 
 ```text
-[ ] Pattern 08 -> Pattern 00 no longer sounds like a restart
-[ ] F -> G -> C bass movement works across the boundary
-[ ] Kick spacing remains continuous across the boundary
-[ ] The quiet hi-hat at row 60 does not expose the seam
-[ ] Two complete order-list passes feel like one continuing piece
+[ ] The drum break continues across the boundary
+[ ] Pattern 07 row 00 does not feel like a rhythmic reset
+[ ] Delayed bass attacks are clearly audible
+[ ] PopBass is no longer swallowed by kick and snare
+```
+
+## Pattern 07 final section
+
+```text
+[ ] Pulsed 047 is tense but not noisy
+[ ] G, D, F, G bass movement is audible
+[ ] Final F-5 bell feels consequential
+[ ] The absence of a final Stab improves the dominant hold
+```
+
+## Pattern 08 release
+
+```text
+[ ] F-5 -> D#5 feels more satisfying than B-4 -> C-5
+[ ] Opening row is strong without being noisy
+[ ] Rows 00–15 feel broad and conclusive
+[ ] Bass remains audible beneath the reduced drums
+```
+
+## Pattern 08 echo and loop
+
+```text
+[ ] Rows 16–31 clearly echo rows 00–15
+[ ] Echo sounds quieter, not merely emptier
+[ ] Rows 32–63 reduce energy smoothly
+[ ] Pattern 08 -> Pattern 00 feels like phrase turnover
+[ ] Two complete order-list passes remain musically convincing
 ```
 
 Current state:
 
 ```text
-Pattern 00 — Wake Pulse          PASS
-Pattern 01 — Main Thump A        PASS
-Pattern 02 — Main Thump B        PASS
-Pattern 03 — Dark Variation      PASS
-Pattern 04 — Pressure Build      PASS
-Pattern 05 — Diagnostic Chime    PASS
-Pattern 06 — Breakdown           PASS
-Pattern 07 — Dominant Lock       REWRITTEN, AWAITING AUDITION
-Pattern 08 — Release and Return  REWRITTEN, AWAITING AUDITION
+Pattern 00 — Wake Pulse                  PASS
+Pattern 01 — Main Thump A                PASS
+Pattern 02 — Main Thump B                PASS
+Pattern 03 — Dark Variation              PASS
+Pattern 04 — Pressure Build              PASS
+Pattern 05 — Diagnostic Chime            PASS
+Pattern 06 — Breakdown                   PASS
+Pattern 07 — Break to Dominant           REVISED, AWAITING AUDITION
+Pattern 08 — Release, Echo, Return       REVISED, AWAITING AUDITION
 ```

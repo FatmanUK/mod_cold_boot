@@ -1,143 +1,159 @@
-# Pattern 07: Dominant Lock
+# Pattern 07: Break to Dominant
 
-Pattern 07 no longer resolves immediately at its beginning. Instead, it continues the chromatic ascent established by Pattern 04:
-
-```text
-D# minor -> E minor -> F minor -> G major
-```
-
-Pattern 04’s final `A-4` stab continues upward through:
+The first sixteen rows deliberately continue the rhythm from Pattern 04’s final sixteen rows:
 
 ```text
-A#4 -> B-4 -> C-5
+kick
+hat
+kick + hat
+kick + hat
+snare
+kick + hat
+kick + hat
+kick + accent
 ```
 
-The final stab returns to `B-4`, creating a leading tone that Pattern 08 resolves to `C-5`.
+Pattern 04’s final `G-3` bass note is allowed to carry through Pattern 07 row 00. The new `D#3` bass attack lands on row 01, between drum hits.
 
 Everything not shown remains empty.
 
 ```text
 Cold Boot
-Pattern 07 - Dominant Lock
+Pattern 07 - Break to Dominant
 
    Row   | Ch1             | Ch2             | Ch3             | Ch4
 ---------+-----------------+-----------------+-----------------+-----------------
-00       | C-4 01 F06      | D#3 04 F91      | D#4 05 037      | ...
-02       | ...             | ...             | ... .. 037      | C-5 03 ...
-04       | ...             | ...             | ... .. 037      | ...
-06       | C-4 01 ...      | A#3 04 ...      | ... .. 037      | ...
-07       | ...             | ...             | ...             | A#4 06 C1C
-08       | C-4 02 ...      | F#3 04 ...      | ... .. 037      | ...
-10       | ...             | ...             | ... .. 037      | C-5 03 ...
-12       | C-4 01 ...      | A#3 04 ...      | ... .. 037      | ...
-14       | ...             | ...             | ... .. 037      | A#4 07 C28
+00       | C-4 01 C38      | ...             | D#4 05 037      | ...
+01       | ...             | D#3 04 C40      | ... .. 037      | ...
+02       | ...             | ...             | ... .. 037      | C-5 03 C18
+03       | ...             | ...             | ... .. 037      | ...
+04       | C-4 01 C34      | ...             | ... .. 037      | C-5 03 C18
+05       | ...             | A#3 04 C40      | ... .. 037      | ...
+06       | C-4 01 C34      | ...             | ... .. 037      | C-5 03 C18
+07       | ...             | ...             | ... .. 037      | A#4 06 C1C
+08       | C-4 02 C2C      | ...             | ... .. 037      | ...
+09       | ...             | F#3 04 C40      | ... .. 037      | ...
+10       | C-4 01 C34      | ...             | ... .. 037      | C-5 03 C18
+11       | ...             | ...             | ... .. 037      | ...
+12       | C-4 01 C34      | ...             | ... .. 037      | C-5 03 C18
+13       | ...             | A#3 04 C40      | ... .. 037      | ...
+14       | C-4 01 C34      | ...             | ... .. 037      | A#4 07 C24
+15       | ...             | ...             | ... .. 037      | ...
 
-16       | C-4 01 ...      | E-3 04 ...      | E-4 05 037      | ...
-18       | ...             | ...             | ... .. 037      | C-5 03 ...
-20       | C-4 01 ...      | B-3 04 ...      | ... .. 037      | ...
-22       | C-4 01 ...      | ...             | ... .. 037      | ...
-23       | ...             | ...             | ...             | B-4 06 C20
-24       | C-4 02 ...      | G-3 04 ...      | ... .. 037      | ...
-26       | ...             | ...             | ... .. 037      | C-5 03 ...
-28       | C-4 01 ...      | B-3 04 ...      | ... .. 037      | ...
-30       | ...             | ...             | ... .. 037      | B-4 07 C2C
+16       | C-4 01 C34      | ...             | E-4 05 037      | ...
+17       | ...             | E-3 04 C40      | ... .. 037      | ...
+18       | ...             | ...             | ... .. 037      | C-5 03 C18
+19       | ...             | ...             | ... .. 037      | ...
+20       | C-4 01 C34      | ...             | ...             | C-5 03 C18
+21       | ...             | B-3 04 C40      | ...             | ...
+22       | C-4 01 C34      | ...             | ...             | C-5 03 C18
+23       | ...             | ...             | ...             | B-4 06 C1C
+24       | C-4 02 C2C      | ...             | ... .. 037      | ...
+25       | ...             | G-3 04 C40      | ... .. 037      | ...
+26       | C-4 01 C34      | ...             | ... .. 037      | C-5 03 C18
+27       | ...             | ...             | ... .. 037      | ...
+28       | C-4 01 C34      | ...             | ...             | C-5 03 C18
+29       | ...             | B-3 04 C40      | ...             | ...
+30       | C-4 01 C34      | ...             | ...             | B-4 07 C28
 
-32       | C-4 01 ...      | F-3 04 ...      | F-4 05 037      | ...
-33       | ...             | ...             | ... .. 037      | ...
-34       | ...             | ...             | ... .. 037      | C-5 03 ...
-35       | ...             | ...             | ... .. 037      | ...
-36       | C-4 01 ...      | C-3 04 ...      | ... .. 037      | ...
-37       | ...             | ...             | ... .. 037      | ...
-38       | C-4 01 ...      | ...             | ... .. 037      | ...
-39       | ...             | ...             | ... .. 037      | C-5 06 C20
-40       | C-4 02 ...      | G#3 04 ...      | ... .. 037      | ...
-41       | ...             | ...             | ... .. 037      | ...
-42       | ...             | ...             | ... .. 037      | C-5 03 ...
-43       | ...             | ...             | ... .. 037      | ...
-44       | C-4 01 ...      | C-3 04 ...      | ... .. 037      | ...
-45       | ...             | ...             | ... .. 037      | ...
-46       | C-4 01 ...      | F-3 04 ...      | ... .. 037      | C-5 07 C30
-47       | ...             | ...             | ... .. 037      | ...
+32       | C-4 01 C30      | ...             | F-4 05 037      | ...
+33       | ...             | F-3 04 C40      | ... .. 037      | ...
+34       | C-4 01 C30      | ...             | ...             | C-5 03 C18
+36       | C-4 01 C30      | ...             | ... .. 037      | C-5 03 C18
+37       | ...             | C-3 04 C40      | ... .. 037      | ...
+38       | C-4 01 C30      | ...             | ...             | C-5 03 C18
+39       | ...             | ...             | ...             | C-5 06 C20
+40       | C-4 02 C28      | ...             | ... .. 037      | ...
+41       | ...             | G#3 04 C40      | ... .. 037      | ...
+42       | C-4 01 C30      | ...             | ...             | C-5 03 C18
+44       | C-4 01 C30      | ...             | ... .. 037      | C-5 03 C18
+45       | ...             | C-3 04 C40      | ... .. 037      | ...
+46       | C-4 01 C30      | ...             | ...             | C-5 07 C2C
 
-48       | C-4 01 ...      | G-3 04 ...      | G-3 05 047      | ...
-49       | ...             | ...             | ... .. 047      | ...
-50       | ...             | ...             | ... .. 047      | C-5 03 ...
-51       | ...             | ...             | ... .. 047      | ...
-52       | C-4 01 ...      | D-3 04 ...      | ... .. 047      | ...
-53       | ...             | ...             | ... .. 047      | ...
-54       | C-4 01 ...      | ...             | ... .. 047      | C-5 03 ...
-55       | ...             | ...             | ... .. 047      | D-5 06 C24
-56       | C-4 02 ...      | F-3 04 ...      | ... .. 047      | ...
-57       | ...             | ...             | ... .. 047      | ...
-58       | C-4 01 ...      | G-3 04 ...      | ... .. 047      | C-5 03 ...
-59       | ...             | ...             | ... .. 047      | ...
-60       | C-4 01 ...      | B-3 04 ...      | ... .. 047      | ...
-61       | ...             | ...             | ... .. 047      | ...
-62       | C-4 01 ...      | G-3 04 ...      | ... .. 047      | B-4 07 C30
-63       | ...             | ...             | ... .. 047      | ...
+48       | C-4 01 C30      | ...             | G-3 05 047      | ...
+49       | ...             | G-3 04 C40      | ... .. 047      | ...
+50       | ...             | ...             | ...             | C-5 03 C14
+52       | C-4 01 C30      | ...             | ... .. 047      | ...
+53       | ...             | D-3 04 C40      | ... .. 047      | ...
+54       | ...             | ...             | ...             | C-5 03 C14
+56       | C-4 02 C28      | ...             | ... .. 047      | ...
+57       | ...             | F-3 04 C40      | ... .. 047      | ...
+58       | ...             | ...             | ...             | C-5 03 C14
+60       | C-4 01 C30      | ...             | ... .. 047      | ...
+61       | ...             | G-3 04 C40      | ... .. 047      | ...
+62       | ...             | ...             | ...             | F-5 06 C24
 ```
 
-## Pattern 07 structure
+## Why Pattern 07 is different
 
-### Rows 00–15: D-sharp minor continuation
+### Pattern 04’s break now continues
 
-Pattern 04’s D-sharp-minor pressure is allowed to continue rather than being prematurely discharged.
+The percussion at Pattern 07 rows 00–15 has the same phase and spacing as Pattern 04 rows 48–63. The boundary no longer introduces a new drum idea.
+
+The first bass note is delayed until row 01. That allows:
 
 ```text
-Pad:   D# minor 037
-Bass:  D#3 -> A#3 -> F#3 -> A#3
-Bell:  A#4
-Stab:  A#4
+Pattern 04 row 62: G-3 bass
+Pattern 07 row 00: bass continues under kick
+Pattern 07 row 01: D#3 bass attack
 ```
 
-### Rows 16–31: semitone lift
+This should make the boundary feel like bar continuation rather than a pattern reset.
 
-The whole structure rises to E minor.
+### PopBass receives its own attack space
+
+Most bass notes now fall on odd rows:
 
 ```text
-Pad:   E minor 037
-Bass:  E-3 -> B-3 -> G-3 -> B-3
-Bell:  B-4
-Stab:  B-4
+01, 05, 09, 13
+17, 21, 25, 29
+33, 37, 41, 45
+49, 53, 57, 61
 ```
 
-### Rows 32–47: sustained F-minor pressure
-
-The arpeggio becomes continuous, while the drum activity increases without becoming the previous wall of percussion.
+They also use:
 
 ```text
-Pad:   F minor 037
-Bass:  F-3 -> C-3 -> G#3 -> C-3 -> F-3
-Bell:  C-5
-Stab:  C-5
+C40 = decimal 64
 ```
 
-### Rows 48–63: dominant lock
-
-The harmony switches to G major:
+Kick and snare levels are reduced:
 
 ```text
-G-3 05 047
+C38 = 56
+C34 = 52
+C30 = 48
+C2C = 44
+C28 = 40
 ```
 
-which cycles:
+The climax should still feel forceful through density, but instruments 1 and 2 should no longer sit on the bass like large, rhythmically gifted furniture.
+
+### The G-major section is now a G7 hold
+
+The `047` arpeggio appears only in two-row pulses:
 
 ```text
-G-3
-B-3
-D-4
+48–49
+52–53
+56–57
+60–61
 ```
 
-The final `B-4` stab is deliberately unresolved. It is the leading tone to the opening `C-5` bell of Pattern 08.
+It is no longer applied continuously across all sixteen rows.
 
-# Revised audition checklist
-
-## Pattern 04 → Pattern 07
+The final dominant harmony consists of:
 
 ```text
-[ ] Pattern 07 feels like a continuation of the build
-[ ] D# -> E -> F -> G harmonic rise is clear
-[ ] Drum density increases gradually
-[ ] Final G-major section is tense but not merely noisy
-[ ] Final B-4 Stab feels like a leading tone
+Bass:       G, D, F, G
+Pad:        G major, containing B
+Final bell: F-5
 ```
+
+That gives us the important G7 tension tones:
+
+```text
+B and F
+```
+
+The explicit final `B-4` stab is gone.
