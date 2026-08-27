@@ -7,6 +7,12 @@ Just for fun, take a look at any modern AAA title's assets folder. The musical a
 
 Not complaining, just saying.
 
+## Result
+
+It's mostly written by ChatGPT Pro. It really got enthusiastic during the design process. It had trouble generating the end patterns, but I think it did a really great job overall. Due to my own mistake I had to do some extensive tweaking to instrument #4, but that's how you learn, and I really learned my way around Milky.
+
+The next step is to repeat the experiment with a smaller model (ie. a stupider LLM thinking-brain), see what it can produce when it's not constantly juiced.
+
 ## build notes
 To get the ST-01 archive on Debian-based Linux, issue these commands:
    
