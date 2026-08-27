@@ -1,5 +1,6 @@
 ---
 title: Cold Boot
+message: Written with ChatGPT  Pro. It's surprisinglyawesome at this. The  mod was designed and  composed over several months, thanks to     resource limits. Checkout the repo!
 orderList:
   - 0
   - 1
@@ -31,15 +32,14 @@ instruments:
     volume: 32
   - id: 4
     source: st01
-    name: ST-01/PopBass
-    volume: 64
-    start: 0x32a
-    length: 0x4fa
-    # This gives an odd purring sound. I'm not sure it's right, but there are no pops, clicks or buzzes. So that's something. 0x22a(0xfd)? quiet purr. 0xba(0xf4)? burbly. 32a(4fa)? bit quiet.
+    name: ST-01/Pulse
+    volume: 0x20
+    finetune: 0xd
   - id: 5
     source: st01
     name: ST-01/KorgString
     volume: 32
+    finetune: 3
     start: 0x2c3
     length: 0xcdd
     # This sounds great!
@@ -47,11 +47,14 @@ instruments:
     source: st01
     name: ST-01/ExBells
     volume: 42
+    #finetune: 0xa  # is this one better without finetune?
   - id: 7
     source: st01
     name: ST-01/Stabs
     volume: 44
+    finetune: 0xf
   - id: 8
     source: st01
     name: ST-01/Sweep
     volume: 34
+    finetune: 4
