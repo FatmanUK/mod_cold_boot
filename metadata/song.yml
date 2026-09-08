@@ -1,6 +1,6 @@
 ---
-title: Cold Boot
-message: Written with ChatGPT  Pro. It's surprisinglyawesome at this. The  mod was designed and  composed over several months, thanks to     resource limits. Checkout the repo!
+title: 'Cold Boot'
+message: 'An awesome toe-tapping     loading tune                            Written with ChatGPT        Pro mode         With interruptions     and interference    by Millie  >^._.^<~~ '
 orderList:
   - 0
   - 1
@@ -19,42 +19,42 @@ speed: 6
 bpm: 145
 instruments:
   - id: 1
-    source: st01
-    name: ST-01/BassDrum1
+    source: 'st01'
+    name: 'ST-01/BassDrum1'
     volume: 64
   - id: 2
-    source: st01
-    name: ST-01/Snare4
+    source: 'st01'
+    name: 'ST-01/Snare4'
     volume: 48
   - id: 3
-    source: st01
-    name: ST-01/CloseHiHat
+    source: 'st01'
+    name: 'ST-01/CloseHiHat'
     volume: 32
   - id: 4
-    source: st01
-    name: ST-01/Pulse
+    source: 'st01'
+    name: 'ST-01/Pulse'
     volume: 0x20
     finetune: 0xd
   - id: 5
-    source: st01
-    name: ST-01/KorgString
+    source: 'st01'
+    name: 'ST-01/KorgString'
     volume: 32
     finetune: 3
     start: 0x2c3
     length: 0xcdd
     # This sounds great!
   - id: 6
-    source: st01
-    name: ST-01/ExBells
+    source: 'st01'
+    name: 'ST-01/ExBells'
     volume: 42
     #finetune: 0xa  # is this one better without finetune?
   - id: 7
-    source: st01
-    name: ST-01/Stabs
+    source: 'st01'
+    name: 'ST-01/Stabs'
     volume: 44
     finetune: 0xf
   - id: 8
-    source: st01
-    name: ST-01/Sweep
+    source: 'st01'
+    name: 'ST-01/Sweep'
     volume: 34
     finetune: 4
