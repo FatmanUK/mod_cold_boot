@@ -1,0 +1,380 @@
+Final checks are passed. It's a modern classic. But it's over too quickly. Can we add a few new patterns into the mix, increase pattern reuse, make it a bit longer? Let's say another two patterns.
+
+---
+
+The tune has committed the traditional tracker-music offence of becoming interesting just before it ends. Two new patterns plus additional reuse fixes that without touching the validated climax or loop.
+
+At Speed 6 / BPM 145, the revised 18-position order runs for roughly **1 minute 59 seconds**, adding about **33 seconds**.
+
+## Revised order list
+
+```text
+00 01 02 01 03 04 02 05 09 01 0A 02 05 03 06 04 07 08
+```
+
+The new middle act is:
+
+```text
+Pattern 05 — Diagnostic Chime
+Pattern 09 — Residual Scan
+Pattern 01 — Main Thump A reprise
+Pattern 0A — Phase Shift
+Pattern 02 — Main Thump B reprise
+Pattern 05 — Diagnostic Chime reprise
+```
+
+This increases reuse of the established material:
+
+```text
+Pattern 01: 2 uses -> 3 uses
+Pattern 02: 2 uses -> 3 uses
+Pattern 05: 1 use  -> 2 uses
+```
+
+The validated ending remains untouched:
+
+```text
+03 -> 06 -> 04 -> 07 -> 08 -> 00
+```
+
+Your current MilkyTracker sample volumes, finetunes, and loop settings remain authoritative.
+
+# Pattern 09: Residual Scan
+
+This follows Pattern 05. It begins as the fading residue of the diagnostic sequence, descends through three related harmonic regions, then gradually restarts the main groove.
+
+Pattern 05 ends with:
+
+```text
+D#4 KorgString
+G-4 Pulse
+F-5 ExBells
+```
+
+Pattern 09 begins with:
+
+```text
+D#4 KorgString
+G-4 Pulse
+D#5 ExBells
+```
+
+That gives the transition a restrained:
+
+```text
+F-5 -> D#5
+```
+
+resolution instead of an abrupt reset.
+
+Everything not shown remains empty.
+
+```text
+Cold Boot
+Pattern 09 - Residual Scan
+
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | ... .. F06      | G-4 04 F91      | D#4 05 C1C      | D#5 06 C18
+04 (04)      | C-4 01 C28      | ...             | ...             | ...
+08 (08)      | C-4 02 C20      | D#4 04 ...      | ...             | ...
+12 (0C)      | C-4 01 C24      | ...             | ...             | A#4 06 C14
+14 (0E)      | ...             | F#4 04 ...      | ...             | ...
+
+16 (10)      | C-4 01 C28      | D-4 04 ...       | D-4 05 C20      | ...
+18 (12)      | ...             | ...             | ...             | C-5 03 C14
+20 (14)      | ...             | A-4 04 ...       | ...             | ...
+22 (16)      | C-4 01 C2C      | ...             | ...             | C-5 03 C14
+24 (18)      | C-4 02 C20      | F-4 04 ...       | ...             | ...
+26 (1A)      | ...             | ...             | ...             | C-5 03 C18
+28 (1C)      | C-4 01 C2C      | ...             | ...             | A-4 06 C14
+30 (1E)      | ...             | G-4 04 ...       | ...             | ...
+
+32 (20)      | C-4 01 C2C      | C#4 04 ...      | C#4 05 C20      | ...
+34 (22)      | ...             | ...             | ...             | C-5 03 C14
+36 (24)      | ...             | G#4 04 ...      | ...             | ...
+38 (26)      | C-4 01 C30      | ...             | ...             | C-5 03 C18
+40 (28)      | C-4 02 C24      | E-4 04 ...       | ...             | ...
+42 (2A)      | ...             | ...             | ...             | C-5 03 C18
+44 (2C)      | C-4 01 C30      | G#4 04 ...      | ...             | ...
+46 (2E)      | ...             | ...             | ...             | G#4 06 C14
+
+48 (30)      | C-4 01 C30      | F-4 04 ...       | G-3 05 C20      | ...
+50 (32)      | ...             | ...             | ...             | C-5 03 C18
+52 (34)      | ...             | G-4 04 ...       | ...             | ...
+54 (36)      | C-4 01 C30      | ...             | ...             | C-5 03 C18
+56 (38)      | C-4 02 C28      | D#4 04 ...      | ... .. C1C      | ...
+58 (3A)      | ...             | ...             | ...             | C-5 03 C1C
+60 (3C)      | C-4 01 C34      | G-4 04 ...       | ...             | ...
+62 (3E)      | ...             | ...             | ...             | C-5 03 C20
+```
+
+## Pattern 09 shape
+
+```text
+Rows 00–15:
+Residual D# diagnostic harmony
+Very sparse drums
+Descending bell afterimage
+
+Rows 16–31:
+D-minor region
+Hats and kick begin returning
+
+Rows 32–47:
+C#-minor region
+Groove becomes more regular
+
+Rows 48–63:
+F -> G preparation
+Normal kick/snare pulse reappears
+Leads into Pattern 01
+```
+
+The ExBells sequence fades downward:
+
+```text
+D#5
+A#4
+A-4
+G#4
+```
+
+Its volume remains deliberately subdued:
+
+```text
+C18
+C14
+C14
+C14
+```
+
+## Pattern 09 transitions
+
+### Pattern 05 -> Pattern 09
+
+```text
+F-5 bell -> D#5 bell
+D#4 pad retained
+G-4 Pulse retained
+Drums withdraw temporarily
+```
+
+### Pattern 09 -> Pattern 01
+
+Pattern 09 ends with:
+
+```text
+G-4 Pulse
+G-3 pad
+regular kick/hat activity
+```
+
+Pattern 01 begins with:
+
+```text
+C-4 Pulse
+C-4 pad
+kick
+```
+
+This produces a compact:
+
+```text
+G -> C
+```
+
+return to the main groove.
+
+# Pattern 0A: Phase Shift
+
+Pattern 0A follows Pattern 01 and leads into Pattern 02.
+
+Its distinguishing feature is that many Pulse attacks occur **between** the principal drum hits. That gives Instrument 04 room to speak and avoids repeating the older mistake where kick, snare, and bass all attempted to occupy the same square inch of audio.
+
+Pattern 01’s final `F-3` KorgString note is intentionally allowed to carry into the opening of Pattern 0A. Therefore Channel 3 is blank at row 00.
+
+Everything not shown remains empty.
+
+```text
+Cold Boot
+Pattern 0A - Phase Shift
+
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 F06      | C-4 04 F91      | ...             | ...
+02 (02)      | ...             | ...             | ...             | C-5 03 C18
+03 (03)      | ...             | G-4 04 ...       | ...             | ...
+06 (06)      | C-4 01 ...      | ...             | ...             | C-5 03 C18
+07 (07)      | ...             | D#4 04 ...      | ...             | ...
+08 (08)      | C-4 02 ...      | ...             | G#3 05 C20      | ...
+10 (0A)      | ...             | ...             | ...             | C-5 03 C18
+11 (0B)      | ...             | A#4 04 ...      | ...             | ...
+12 (0C)      | C-4 01 ...      | ...             | ...             | ...
+14 (0E)      | ...             | ...             | ...             | C-5 03 C18
+15 (0F)      | ...             | ...             | ...             | G-4 06 C14
+
+16 (10)      | C-4 01 ...      | C-4 04 ...       | C-4 05 037      | ...
+17 (11)      | ...             | ...             | ... .. 037      | ...
+18 (12)      | ...             | ...             | ...             | C-5 03 C18
+20 (14)      | ...             | G-4 04 ...       | ...             | ...
+22 (16)      | C-4 01 ...      | ...             | ...             | C-5 03 C18
+24 (18)      | C-4 02 ...      | D#4 04 ...      | ... .. 037      | ...
+25 (19)      | ...             | ...             | ... .. 037      | ...
+26 (1A)      | ...             | ...             | ...             | C-5 03 C18
+28 (1C)      | C-4 01 ...      | ...             | ...             | ...
+29 (1D)      | ...             | A#4 04 ...      | ...             | ...
+30 (1E)      | ...             | ...             | ...             | C-5 03 C18
+31 (1F)      | ...             | ...             | ...             | G-4 07 C18
+
+32 (20)      | C-4 01 ...      | G#4 04 ...      | A#3 05 C20      | ...
+34 (22)      | ...             | ...             | ...             | C-5 03 C18
+35 (23)      | ...             | D#4 04 ...      | ...             | ...
+36 (24)      | C-4 01 ...      | ...             | ...             | ...
+38 (26)      | ...             | ...             | ...             | C-5 03 C18
+39 (27)      | ...             | F-4 04 ...       | ...             | ...
+40 (28)      | C-4 02 ...      | ...             | ...             | ...
+42 (2A)      | ...             | ...             | ...             | C-5 03 C18
+43 (2B)      | ...             | G-4 04 ...       | ...             | ...
+44 (2C)      | C-4 01 ...      | ...             | ...             | ...
+46 (2E)      | ...             | ...             | ...             | C-5 03 C18
+47 (2F)      | ...             | ...             | ...             | D-5 06 C18
+
+48 (30)      | C-4 01 ...      | F-4 04 ...       | G-3 05 C20      | ...
+50 (32)      | ...             | ...             | ...             | C-5 03 C18
+51 (33)      | ...             | C-4 04 ...       | ...             | ...
+52 (34)      | C-4 01 ...      | ...             | ...             | ...
+54 (36)      | ...             | ...             | ...             | C-5 03 C18
+55 (37)      | ...             | D#4 04 ...      | ...             | ...
+56 (38)      | C-4 02 ...      | ...             | ...             | ...
+58 (3A)      | ...             | ...             | ...             | C-5 03 C18
+59 (3B)      | ...             | G-4 04 ...       | ...             | ...
+60 (3C)      | C-4 01 ...      | ...             | ...             | ...
+62 (3E)      | ...             | ...             | ...             | C-5 03 C1C
+```
+
+## Pattern 0A shape
+
+### Rows 00–15: displaced Pulse line
+
+The Pulse attacks fall on:
+
+```text
+00
+03
+07
+11
+```
+
+while the main drum events fall on:
+
+```text
+00
+06
+08
+12
+```
+
+This makes the Pulse line more audible and gives the pattern a slightly skewed clockwork feel.
+
+### Rows 16–31: brief C-minor arpeggio flashes
+
+The KorgString arpeggio appears only on:
+
+```text
+16–17
+24–25
+```
+
+It adds harmonic motion without turning the pattern into another Pressure Build.
+
+### Rows 32–47: darker answer
+
+```text
+Pad:    A#3
+Pulse:  G#4 -> D#4 -> F-4 -> G-4
+Bell:   D-5
+```
+
+This section provides contrast before the final turnaround.
+
+### Rows 48–63: transition into Pattern 02
+
+```text
+Pad:    G-3
+Pulse:  F-4 -> C-4 -> D#4 -> G-4
+Drums:  familiar main-groove spacing
+```
+
+Pattern 02 then begins on C, giving another controlled:
+
+```text
+G -> C
+```
+
+resolution.
+
+# Audition checklist
+
+## Revised arrangement
+
+```text
+[ ] The new middle act feels like an extension, not padding
+[ ] Pattern 01, Pattern 02, and Pattern 05 tolerate their extra appearances
+[ ] The second Pattern 05 still feels purposeful
+[ ] The eventual breakdown and climax do not feel excessively delayed
+```
+
+## Pattern 05 -> Pattern 09
+
+```text
+[ ] F-5 -> D#5 bell resolution sounds natural
+[ ] Diagnostic atmosphere carries across the boundary
+[ ] Sparse opening feels intentional
+[ ] D#4 pad retrigger does not click
+```
+
+## Pattern 09
+
+```text
+[ ] Harmonic descent is clear but not overly melodic
+[ ] Drum return builds smoothly
+[ ] Pulse remains audible
+[ ] Pattern 09 -> Pattern 01 restores the main groove naturally
+```
+
+## Pattern 01 -> Pattern 0A
+
+```text
+[ ] F-3 KorgString carries across the boundary cleanly
+[ ] The boundary does not sound empty because Channel 3 is blank at row 00
+[ ] Displaced Pulse attacks are clearly audible
+```
+
+## Pattern 0A
+
+```text
+[ ] Short 037 flashes sound deliberate
+[ ] Pattern has a distinct identity from Patterns 01 and 02
+[ ] D-5 bell at row 47 is restrained
+[ ] Pattern 0A -> Pattern 02 transition is smooth
+```
+
+## Full sequence
+
+```text
+[ ] Play the complete revised order at least twice
+[ ] Confirm Pattern 08 -> Pattern 00 remains unchanged
+[ ] Check that Patterns 04 and 07 still feel like the final escalation
+[ ] Confirm the new approximate two-minute duration feels appropriate
+```
+
+Current state:
+
+```text
+Patterns 00–08:    PASS
+Pattern 09:        COMPOSED, AWAITING AUDITION
+Pattern 0A:        COMPOSED, AWAITING AUDITION
+Revised order:     READY FOR AUDITION
+Final MOD export:  REVALIDATION REQUIRED AFTER ARRANGEMENT CHANGE
+```
