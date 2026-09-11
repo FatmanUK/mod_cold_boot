@@ -9,4 +9,4 @@ Pattern roles:
 07 - Climax Pulse: Fullest version: kick, bass, hat, stabs/chimes.
 08 - Loop Return: Dissolves back toward Pattern 00 cleanly.
 09 - Residual Scan: Fading residue of the diagnostic sequence. Descends through three related harmonic regions, then gradually restarts the main groove.
-0a - Phase Shift: 
+0a - Phase Lock: ?
