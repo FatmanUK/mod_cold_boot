@@ -7,14 +7,13 @@ Just for fun, take a look at any modern AAA title's assets folder. The musical a
 
 Not complaining, just saying.
 
-## Result
-
+## result
 It's mostly written by ChatGPT Pro. It really got enthusiastic during the design process. It had trouble generating the end patterns, but I think it did a really great job overall. Due to my own mistake I had to do some extensive tweaking to instrument #4, but that's how you learn, and I really learned my way around Milky.
 
 The next step is to repeat the experiment with a smaller model (ie. a stupider LLM thinking-brain), see what it can produce when it's not constantly juiced.
 
 ## build notes
-To get the ST-01 archive on Debian-based Linux, issue these commands:
+To get the ST-01 and ST-02 archives on Debian-based Linux, issue these commands:
    
     ❯ sudo apt update
     ❯ sudo apt install lhasa wget
@@ -22,7 +21,9 @@ To get the ST-01 archive on Debian-based Linux, issue these commands:
     ❯ cd mod_cold_boot/stxx
     ❯ wget -O st-01.lha https://aminet.net/mods/inst/st-01.lha
     ❯ lha x st-01.lha
+    ❯ wget -O st-01.lha https://aminet.net/mods/inst/st-02.lha
+    ❯ lha x st-02.lha
 
-These files are in IFF format and AmigaOS doesn't use file extensions, so to make MilkyTracker see them you have to rename the ones you want with '.iff' extensions. Like this:
+These samples are in IFF format and AmigaOS doesn't use file extensions, so to make MilkyTracker see them you have to rename the ones you want with '.iff' extensions. Like this:
    
     ❯ mv Stabs Stabs.iff
