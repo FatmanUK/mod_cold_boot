@@ -144,69 +144,6 @@ Audition this pattern in song context rather than beginning directly at Pattern 
 
 Everything not listed remains empty.
 
-```text
-Cold Boot
-Pattern 0A - Phase Lock
-
-|Row | Ch1        | Ch2        | Ch3        | Ch4        |
-|---:|------------|------------|------------|------------|
-| 00 | C-4 01 --- | ... .. --- | ...        | ...        |
-| 01 | ...        | F-4 04 ... | ...        | ...        |
-| 02 | ...        | ...        | ...        | C-5 03 ... |
-| 04 | ...        | ...        | ...        | C-5 03 ... |
-| 05 | ...        | C-4 04 ... | ...        | ...        |
-| 06 | C-4 01 ... | ...        | ...        | C-5 03 ... |
-| 08 | C-4 02 ... | ...        | ...        | ...        |
-| 09 | ...        | G#4 04 ... | ...        | ...        |
-| 10 | ...        | ...        | ...        | C-5 03 ... |
-| 12 | C-4 01 ... | ...        | ...        | ...        |
-| 13 | ...        | C-4 04 ... | ...        | ...        |
-| 14 | ...        | ...        | ...        | C-5 03 ... |
-| 15 | ...        | ...        | ...        | G#4 06 C14 |
-
-| 16 | C-4 01 ... | ...        | C-4 05 ... | ...        |
-| 17 | ...        | C-4 04 ... | ...        | ...        |
-| 18 | ...        | ...        | ...        | C-5 03 ... |
-| 20 | ...        | ...        | ...        | C-5 03 ... |
-| 21 | ...        | G-4 04 ... | ...        | ...        |
-| 22 | C-4 01 ... | ...        | ...        | C-5 03 ... |
-| 24 | C-4 02 ... | ...        | ...        | ...        |
-| 25 | ...        | D#4 04 ... | ...        | ...        |
-| 26 | ...        | ...        | ...        | C-5 03 ... |
-| 28 | C-4 01 ... | ...        | ...        | ...        |
-| 29 | ...        | G-4 04 ... | ...        | ...        |
-| 30 | ...        | ...        | ...        | C-5 03 ... |
-| 31 | ...        | ...        | ...        | D#5 06 C14 |
-
-| 32 | C-4 01 ... | ...        | G#3 05 ... | ...        |
-| 33 | ...        | G#4 04 ... | ...        | ...        |
-| 34 | ...        | ...        | ...        | C-5 03 ... |
-| 36 | ...        | ...        | ...        | C-5 03 ... |
-| 37 | ...        | D#4 04 ... | ...        | ...        |
-| 38 | C-4 01 ... | ...        | ...        | C-5 03 ... |
-| 40 | C-4 02 ... | ...        | ...        | ...        |
-| 41 | ...        | C-4 04 ... | ...        | ...        |
-| 42 | ...        | ...        | ...        | C-5 03 ... |
-| 44 | C-4 01 ... | ...        | ...        | ...        |
-| 45 | ...        | D#4 04 ... | ...        | ...        |
-| 46 | ...        | ...        | ...        | C-5 03 ... |
-| 47 | ...        | ...        | ...        | C-5 06 C14 |
-
-| 48 | C-4 01 ... | ...        | G-4 05 ... | ...        |
-| 49 | ...        | G-4 04 ... | ...        | ...        |
-| 50 | ...        | ...        | ...        | C-5 03 ... |
-| 52 | ...        | ...        | ...        | C-5 03 ... |
-| 53 | ...        | D-4 04 ... | ...        | ...        |
-| 54 | C-4 01 ... | ...        | ...        | C-5 03 ... |
-| 56 | C-4 02 ... | ...        | ...        | ...        |
-| 57 | ...        | B-4 04 ... | ...        | ...        |
-| 58 | ...        | ...        | ...        | C-5 03 ... |
-| 60 | C-4 01 ... | ...        | ...        | ...        |
-| 61 | ...        | D-4 04 ... | ...        | ...        |
-| 62 | ...        | ...        | ...        | C-5 03 ... |
-| 63 | ...        | ...        | ...        | G-4 06 C10 |
-```
-
 ## The fixed rhythmic cell
 
 Every sixteen-row section now uses exactly this layout:
@@ -369,4 +306,203 @@ Patterns 00–09:         PASS
 Pattern 0A — Phase Lock:     REWRITTEN, AWAITING AUDITION
 Revised order list:     UNCHANGED
 Final export validation:     PENDING PATTERN 0A PASS
+```
+
+---
+
+The rejected Pattern 0A is discarded. This replacement keeps Channel 1’s accepted rhythm and simplifies everything else.
+
+## Pattern 0A: Clocked Pulse
+
+The rules are now rigid:
+
+```text
+Channel 1:
+Same accepted kick/snare rhythm as before
+
+Channel 2:
+Pulse notes exactly every four rows:
+00, 04, 08, 12
+
+Channel 3:
+Explicit pad note at row 00 and every 16-row section
+
+Channel 4:
+Hi-hats only
+No bells
+No stabs
+No competing sustained sample
+```
+
+The hats fall halfway between most Pulse notes:
+
+```text
+Pulse: 00, 04, 08, 12
+Hats:  02, 06, 10, 14
+```
+
+Everything not shown remains empty.
+
+```text
+Cold Boot
+Pattern 0A - Clocked Pulse
+
+|Row | Ch1        | Ch2        | Ch3        | Ch4        |
+|---:|------------|------------|------------|------------|
+| 00 | C-4 01 F06 | F-4 04 F91 | F-3 05 ... | ... .. C00 |
+| 02 | ...        | ...        | ...        | C-5 03 ... |
+| 04 | ...        | C-4 04 ... | ...        | ...        |
+| 06 | C-4 01 ... | ...        | ...        | C-5 03 ... |
+| 08 | C-4 02 ... | G#4 04 ... | ...        | ...        |
+| 10 | ...        | ...        | ...        | C-5 03 ... |
+| 12 | C-4 01 ... | C-4 04 ... | ...        | ...        |
+| 14 | ...        | ...        | ...        | C-5 03 ... |
+
+| 16 | C-4 01 ... | C-4 04 ... | C-4 05 ... | ...        |
+| 18 | ...        | ...        | ...        | C-5 03 ... |
+| 20 | ...        | G-4 04 ... | ...        | ...        |
+| 22 | C-4 01 ... | ...        | ...        | C-5 03 ... |
+| 24 | C-4 02 ... | D#4 04 ... | ...        | ...        |
+| 26 | ...        | ...        | ...        | C-5 03 ... |
+| 28 | C-4 01 ... | G-4 04 ... | ...        | ...        |
+| 30 | ...        | ...        | ...        | C-5 03 ... |
+
+| 32 | C-4 01 ... | G#4 04 ... | G#3 05 ... | ...        |
+| 34 | ...        | ...        | ...        | C-5 03 ... |
+| 36 | ...        | D#4 04 ... | ...        | ...        |
+| 38 | C-4 01 ... | ...        | ...        | C-5 03 ... |
+| 40 | C-4 02 ... | C-4 04 ... | ...        | ...        |
+| 42 | ...        | ...        | ...        | C-5 03 ... |
+| 44 | C-4 01 ... | D#4 04 ... | ...        | ...        |
+| 46 | ...        | ...        | ...        | C-5 03 ... |
+
+| 48 | C-4 01 ... | G-4 04 ... | G-3 05 ... | ...        |
+| 50 | ...        | ...        | ...        | C-5 03 ... |
+| 52 | ...        | D-4 04 ... | ...        | ...        |
+| 54 | C-4 01 ... | ...        | ...        | C-5 03 ... |
+| 56 | C-4 02 ... | B-4 04 ... | ...        | ...        |
+| 58 | ...        | ...        | ...        | C-5 03 ... |
+| 60 | C-4 01 ... | G-4 04 ... | ...        | ...        |
+| 62 | ...        | ...        | ...        | C-5 03 ... |
+```
+
+## Why this should behave properly
+
+### Channel 1 remains unchanged
+
+Each sixteen-row block uses:
+
+```text
+Row +00   Kick
+Row +06   Kick
+Row +08   Snare
+Row +12   Kick
+```
+
+That was the part already working, so it has not been “improved” into ruin.
+
+### Channel 2 is no longer skewed
+
+Every section uses exactly four evenly spaced Pulse notes:
+
+```text
+Row +00
+Row +04
+Row +08
+Row +12
+```
+
+The four harmonic phrases are:
+
+```text
+Rows 00–15, F minor:
+F-4  C-4  G#4  C-4
+
+Rows 16–31, C minor:
+C-4  G-4  D#4  G-4
+
+Rows 32–47, A-flat region:
+G#4  D#4  C-4  D#4
+
+Rows 48–63, G dominant:
+G-4  D-4  B-4  G-4
+```
+
+The last section resolves directly into Pattern 02’s opening C.
+
+### Channel 3 is explicit
+
+The pad is retriggered at every section boundary:
+
+```text
+Row 00   F-3
+Row 16   C-4
+Row 32   G#3
+Row 48   G-3
+```
+
+The pattern no longer depends on Pattern 01 to supply its first pad note. It should sound complete both in context and when auditioned by itself, because apparently that is a feature worth demanding from music.
+
+### Channel 4 is only a hi-hat channel
+
+The hats occur at:
+
+```text
+02, 06, 10, 14
+18, 22, 26, 30
+34, 38, 42, 46
+50, 54, 58, 62
+```
+
+There are no bells anywhere in Pattern 0A.
+
+At row 00:
+
+```text
+... .. C00
+```
+
+cuts off Pattern 01’s final Stab before the first hat arrives. The `C-5 03` event at row 02 restores the hi-hat’s stored sample volume.
+
+## Transition behavior
+
+Pattern 01 into Pattern 0A:
+
+```text
+Pattern 01 ends around F-minor territory
+Pattern 0A explicitly starts with F Pulse and F pad
+Channel 4’s lingering Stab is silenced
+The established kick rhythm continues
+```
+
+Pattern 0A into Pattern 02:
+
+```text
+Pattern 0A ends on G-dominant harmony
+Pattern 02 starts on C
+G -> C resolution
+No sustained bell crosses the boundary
+```
+
+## Audition checklist
+
+```text
+[ ] Channel 2 feels square and stable, not skewed
+[ ] Channel 3 establishes the harmony immediately at row 00
+[ ] Hats remain audible throughout
+[ ] C00 cleanly removes Pattern 01’s trailing Stab
+[ ] No melodic sample masks the hats
+[ ] Channel 1 retains the previously accepted groove
+[ ] Each sixteen-row section feels rhythmically identical
+[ ] Pattern 01 -> Pattern 0A is clean
+[ ] Pattern 0A -> Pattern 02 resolves naturally
+```
+
+Current state:
+
+```text
+Patterns 00–09:                   PASS
+Previous Pattern 0A versions:     DISCARDED
+Pattern 0A — Clocked Pulse:       REWRITTEN, AWAITING AUDITION
+Order list:                       UNCHANGED
 ```
