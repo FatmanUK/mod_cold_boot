@@ -1,0 +1,52 @@
+It's all good except that the transition from pattern01 to pattern0a is a little rough. Can you smooth it out a bit?
+
+---
+
+The roughness is probably coming from two things landing at once: Pattern 01’s row-62 Stab is being hard-cut with `C00`, while Pattern 0A immediately retriggers kick, Pulse, and pad on row 00. Subtle as a server rack falling down stairs.
+
+Leave Pattern 01 untouched because it is reused elsewhere. Apply this small patch only to the opening of Pattern 0A.
+
+## Pattern 0A opening patch
+
+Replace rows 00 and 02 with:
+
+```text
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 ...      | F-4 04 C34      | F-3 05 ...      | ... .. A08
+02 (02)      | ...             | ...             | ...             | C-5 03 C18
+```
+
+Everything from row 04 onward remains exactly as already auditioned.
+
+### What changes
+
+`A08` replaces `C00` on Channel 4. It fades the outgoing Stab rapidly across row 00 rather than chopping it off at the boundary.
+
+`C18` makes the first hi-hat quieter. The next hat at row 06 has instrument `03` with no volume effect, so it returns to the normal tested hi-hat volume.
+
+`C34` softens the first Pulse attack so it does not compete as aggressively with the kick. Row 04 retriggers instrument `04` normally, restoring your stored Pulse volume.
+
+`F91` moves from Channel 2 to Channel 3 solely to free Channel 2’s effect column for the reduced opening volume.
+
+If your locally tuned Pulse level is not near `C40`, treat `C34` as “roughly 80% of normal” and adjust that single value proportionally.
+
+The resulting handoff should behave like:
+
+```text
+Pattern 01 row 62:
+Stab sounds
+
+Pattern 0A row 00:
+Stab fades
+Kick lands
+Pulse and pad enter slightly behind the foreground dynamically
+
+Pattern 0A row 02:
+Quiet first hat
+
+Pattern 0A row 04 onward:
+Normal Clocked Pulse groove resumes
+```
+
+This preserves the accepted rhythm and harmony while turning the boundary into a short crossfade rather than a small collision.
