@@ -1,12 +1,12 @@
-# Cold Boot - Final Bootstrap Markdown File
+# Cold Boot - Extended Final Bootstrap Markdown File
 
 **Project:** Cold Boot  
-**Status:** Composition complete; final export and post-export validation pending  
+**Status:** Extended composition and in-editor audition complete; final export and post-export validation pending  
 **Tracker:** MilkyTracker  
 **Platform:** Linux / PikaOS  
 **Target format:** 4-channel ProTracker MOD  
 **Working format:** Current MilkyTracker project/module  
-**Current order:** `00 01 02 01 03 04 02 05 03 06 04 07 08`
+**Current order:** `00 01 02 01 03 04 02 05 09 01 0A 02 05 03 06 04 07 08`
 
 ---
 
@@ -37,9 +37,9 @@ The final by-ear Pulse volume edits and most exact finetune values were not tran
 
 ## Current Goal
 
-Finish and validate **Cold Boot** as an original, suspenseful, early-1990s-style Amiga loading-screen tune in authentic 4-channel ProTracker MOD format.
+Finish and validate the extended version of **Cold Boot** as an original, suspenseful, early-1990s-style Amiga loading-screen tune in authentic 4-channel ProTracker MOD format.
 
-The composition itself is complete. The remaining work is production validation and export.
+The composition, extended arrangement, and in-editor audition are complete. The accepted version contains eleven unique patterns across an eighteen-position order list and runs for approximately **1 minute 59 seconds** at Speed 6 / BPM 145.
 
 The final musical character is:
 
@@ -48,18 +48,17 @@ The final musical character is:
 - steady thumping groove
 - chromatic dark variations
 - diagnostic bell sequence
+- a longer middle act using both new material and pattern reuse
 - breakdown and restart
 - sustained dominant build
 - broad minor-key release
 - gradual phrase turnover back into the opening
 
-Exact runtime is not a constraint. Musical structure, ProTracker compatibility, and convincing looping take priority.
-
 ## Next 3 Steps
 
 ### 1. Record the final sample metadata
 
-Before changing anything else, write down the actual settings from the auditioned MilkyTracker file:
+Write down the actual settings from the auditioned MilkyTracker file:
 
 ```text
 Sample number
@@ -82,7 +81,7 @@ Instrument 06 = ST-01/ExBells
 Instrument 06 finetune = 0
 ```
 
-### 2. Save the working master and export the MOD
+### 2. Save the extended working master and export the MOD
 
 Recommended filenames:
 
@@ -91,7 +90,7 @@ cold_boot_working.xm
 coldboot.mod
 ```
 
-The XM is a safety master for MilkyTracker editing. The MOD is the authentic deliverable.
+The XM is the safety master for MilkyTracker editing. The MOD is the authentic deliverable.
 
 ### 3. Reopen and validate the exported MOD
 
@@ -100,11 +99,15 @@ After export:
 ```text
 Close or unload the working project
 Open coldboot.mod
-Play the full order list at least twice
+Play the complete 18-position order at least twice
 Check all sample loops
 Check all finetunes
-Check the Pattern 07 -> 08 payoff
-Check the Pattern 08 -> 00 phrase turnover
+Check Pattern 05 -> Pattern 09
+Check Pattern 09 -> Pattern 01
+Check the smoothed Pattern 01 -> Pattern 0A boundary
+Check Pattern 0A -> Pattern 02
+Check Pattern 07 -> Pattern 08
+Check Pattern 08 -> Pattern 00
 Check for clipping in Patterns 04 and 07
 Confirm no XM-only behavior was required
 ```
@@ -126,8 +129,9 @@ Rows/pattern:    64
 Speed:           6
 Tempo/BPM:       145
 Allowed notes:   C-3 through B-5 only
-Unique patterns: 00 through 08
-Order length:    13
+Unique patterns: 00 through 0A (11 total)
+Order length:    18
+Approx. runtime: 1 minute 59 seconds
 ```
 
 ## Compatibility Rules
@@ -156,12 +160,14 @@ Pattern 05  Diagnostic Chime
 Pattern 06  Breakdown
 Pattern 07  Break to Dominant
 Pattern 08  Release, Echo, Return
+Pattern 09  Residual Scan
+Pattern 0A  Clocked Pulse
 ```
 
 ## Final Order List
 
 ```text
-00 01 02 01 03 04 02 05 03 06 04 07 08
+00 01 02 01 03 04 02 05 09 01 0A 02 05 03 06 04 07 08
 ```
 
 Structural arc:
@@ -175,12 +181,28 @@ Wake
 -> pressure build
 -> return of variation
 -> diagnostic sequence
+-> residual scan
+-> main-groove reprise
+-> clocked-pulse variation
+-> variation reprise
+-> diagnostic reprise
 -> dark reprise
 -> breakdown
 -> machinery restarts
 -> dominant climax
 -> release, echo, and phrase turnover
 -> Wake Pulse begins again
+```
+
+Pattern reuse in the final arrangement:
+
+```text
+Pattern 01  3 uses
+Pattern 02  3 uses
+Pattern 03  2 uses
+Pattern 04  2 uses
+Pattern 05  2 uses
+All other patterns  1 use each
 ```
 
 ## Final Sample Map
@@ -332,6 +354,8 @@ PikaOS / Debian-derived Linux
     │   └── 08 Sweep
     │
     ├── Cold Boot working master
+    │   ├── 11 auditioned unique patterns
+    │   ├── 18-position extended order list
     │   └── auditioned sample settings and final mix
     │
     └── Final deliverable
@@ -416,6 +440,28 @@ All nine patterns accepted
 Composition phase complete
 ```
 
+### v1.5 - Extended Arrangement Validated
+
+```text
+Pattern 09 Residual Scan added and auditioned
+Pattern 0A Clocked Pulse added and auditioned
+Order expanded from 13 to 18 positions
+Pattern 01 reuse increased to 3 appearances
+Pattern 02 reuse increased to 3 appearances
+Pattern 05 reuse increased to 2 appearances
+Approximate runtime increased to 1 minute 59 seconds
+```
+
+### v1.6 - Pattern 01 to Pattern 0A Boundary Polished
+
+```text
+Pattern 0A row 00 Channel 4 uses A08 to fade the outgoing Stab
+Pattern 0A row 00 Pulse attack reduced with C34
+F91 moved to Channel 3 at row 00
+Pattern 0A row 02 first hi-hat reduced with C18
+Transition accepted after audition
+```
+
 ---
 
 # 4. Golden Code Blocks
@@ -459,7 +505,7 @@ Note range:   C-3 through B-5
 ## Order List
 
 ```text
-00 01 02 01 03 04 02 05 03 06 04 07 08
+00 01 02 01 03 04 02 05 09 01 0A 02 05 03 06 04 07 08
 ```
 
 ## Sample Map
@@ -843,6 +889,100 @@ Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
 
 ---
 
+
+## Pattern 09 - Residual Scan
+
+```text
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | ... .. F06      | G-4 04 F91      | D#4 05 C1C      | D#5 06 C18
+04 (04)      | C-4 01 C28      | ...             | ...             | ...
+08 (08)      | C-4 02 C20      | D#4 04 ...      | ...             | ...
+12 (0C)      | C-4 01 C24      | ...             | ...             | A#4 06 C14
+14 (0E)      | ...             | F#4 04 ...      | ...             | ...
+
+16 (10)      | C-4 01 C28      | D-4 04 ...      | D-4 05 C20      | ...
+18 (12)      | ...             | ...             | ...             | C-5 03 C14
+20 (14)      | ...             | A-4 04 ...      | ...             | ...
+22 (16)      | C-4 01 C2C      | ...             | ...             | C-5 03 C14
+24 (18)      | C-4 02 C20      | F-4 04 ...      | ...             | ...
+26 (1A)      | ...             | ...             | ...             | C-5 03 C18
+28 (1C)      | C-4 01 C2C      | ...             | ...             | A-4 06 C14
+30 (1E)      | ...             | G-4 04 ...      | ...             | ...
+
+32 (20)      | C-4 01 C2C      | C#4 04 ...      | C#4 05 C20      | ...
+34 (22)      | ...             | ...             | ...             | C-5 03 C14
+36 (24)      | ...             | G#4 04 ...      | ...             | ...
+38 (26)      | C-4 01 C30      | ...             | ...             | C-5 03 C18
+40 (28)      | C-4 02 C24      | E-4 04 ...      | ...             | ...
+42 (2A)      | ...             | ...             | ...             | C-5 03 C18
+44 (2C)      | C-4 01 C30      | G#4 04 ...      | ...             | ...
+46 (2E)      | ...             | ...             | ...             | G#4 06 C14
+
+48 (30)      | C-4 01 C30      | F-4 04 ...      | G-3 05 C20      | ...
+50 (32)      | ...             | ...             | ...             | C-5 03 C18
+52 (34)      | ...             | G-4 04 ...      | ...             | ...
+54 (36)      | C-4 01 C30      | ...             | ...             | C-5 03 C18
+56 (38)      | C-4 02 C28      | D#4 04 ...      | ... .. C1C      | ...
+58 (3A)      | ...             | ...             | ...             | C-5 03 C1C
+60 (3C)      | C-4 01 C34      | G-4 04 ...      | ...             | ...
+62 (3E)      | ...             | ...             | ...             | C-5 03 C20
+```
+
+## Pattern 0A - Clocked Pulse
+
+The row 00/02 entries below include the accepted Pattern 01 -> Pattern 0A smoothing patch.
+
+```text
+Row dec(hex) | Ch1             | Ch2             | Ch3             | Ch4
+-------------+-----------------+-----------------+-----------------+-----------------
+00 (00)      | C-4 01 F06      | F-4 04 C34      | F-3 05 F91      | ... .. A08
+02 (02)      | ...             | ...             | ...             | C-5 03 C18
+04 (04)      | ...             | C-4 04 ...      | ...             | ...
+06 (06)      | C-4 01 ...      | ...             | ...             | C-5 03 ...
+08 (08)      | C-4 02 ...      | G#4 04 ...      | ...             | ...
+10 (0A)      | ...             | ...             | ...             | C-5 03 ...
+12 (0C)      | C-4 01 ...      | C-4 04 ...      | ...             | ...
+14 (0E)      | ...             | ...             | ...             | C-5 03 ...
+
+16 (10)      | C-4 01 ...      | C-4 04 ...      | C-4 05 ...      | ...
+18 (12)      | ...             | ...             | ...             | C-5 03 ...
+20 (14)      | ...             | G-4 04 ...      | ...             | ...
+22 (16)      | C-4 01 ...      | ...             | ...             | C-5 03 ...
+24 (18)      | C-4 02 ...      | D#4 04 ...      | ...             | ...
+26 (1A)      | ...             | ...             | ...             | C-5 03 ...
+28 (1C)      | C-4 01 ...      | G-4 04 ...      | ...             | ...
+30 (1E)      | ...             | ...             | ...             | C-5 03 ...
+
+32 (20)      | C-4 01 ...      | G#4 04 ...      | G#3 05 ...      | ...
+34 (22)      | ...             | ...             | ...             | C-5 03 ...
+36 (24)      | ...             | D#4 04 ...      | ...             | ...
+38 (26)      | C-4 01 ...      | ...             | ...             | C-5 03 ...
+40 (28)      | C-4 02 ...      | C-4 04 ...      | ...             | ...
+42 (2A)      | ...             | ...             | ...             | C-5 03 ...
+44 (2C)      | C-4 01 ...      | D#4 04 ...      | ...             | ...
+46 (2E)      | ...             | ...             | ...             | C-5 03 ...
+
+48 (30)      | C-4 01 ...      | G-4 04 ...      | G-3 05 ...      | ...
+50 (32)      | ...             | ...             | ...             | C-5 03 ...
+52 (34)      | ...             | D-4 04 ...      | ...             | ...
+54 (36)      | C-4 01 ...      | ...             | ...             | C-5 03 ...
+56 (38)      | C-4 02 ...      | B-4 04 ...      | ...             | ...
+58 (3A)      | ...             | ...             | ...             | C-5 03 ...
+60 (3C)      | C-4 01 ...      | G-4 04 ...      | ...             | ...
+62 (3E)      | ...             | ...             | ...             | C-5 03 ...
+```
+
+### Pattern 0A Opening Transition Logic
+
+```text
+A08  fades the outgoing Pattern 01 Stab across row 00
+C34  softens the first Pulse attack
+F91  remains present, moved to Channel 3
+C18  reduces the first hi-hat at row 02
+Row 04 onward returns to the accepted Clocked Pulse groove
+```
+
 # 5. Tested & Passing Status Confirmation
 
 ## Environment and Architecture
@@ -856,6 +996,7 @@ Pulse forward loop:                    PASS
 KorgString forward loop:               PASS
 Final by-ear balance:                  PASS
 ExBells with finetune 0:               PASS
+Extended 18-position arrangement:      PASS in MilkyTracker
 ```
 
 ## Pattern Status
@@ -870,6 +1011,8 @@ Pattern 05 - Diagnostic Chime          PASS
 Pattern 06 - Breakdown                 PASS
 Pattern 07 - Break to Dominant         PASS
 Pattern 08 - Release, Echo, Return     PASS
+Pattern 09 - Residual Scan             PASS
+Pattern 0A - Clocked Pulse             PASS
 ```
 
 ## Confirmed Transitions
@@ -877,11 +1020,15 @@ Pattern 08 - Release, Echo, Return     PASS
 ```text
 Pattern 01 -> Pattern 02               PASS
 Pattern 01 -> Pattern 03               PASS
+Pattern 01 -> Pattern 0A               PASS after smoothing patch
 Pattern 02 -> Pattern 05               PASS
 Pattern 03 -> Pattern 04               PASS
 Pattern 03 -> Pattern 06               PASS
+Pattern 05 -> Pattern 09               PASS
 Pattern 05 -> Pattern 03               PASS
 Pattern 06 -> Pattern 04               PASS
+Pattern 09 -> Pattern 01               PASS
+Pattern 0A -> Pattern 02               PASS
 Pattern 04 -> Pattern 07               PASS
 Pattern 07 -> Pattern 08               PASS
 Pattern 08 -> Pattern 00               PASS as phrase turnover
@@ -896,6 +1043,9 @@ Chromatic pad tension                   PASS
 037 minor arpeggios                     PASS
 Progressive stab-volume rise            PASS
 Diagnostic chime sequence               PASS
+Residual Scan extension                 PASS
+Clocked Pulse rhythmic stability        PASS
+Pattern 01 -> 0A crossfade              PASS
 Breakdown and restart                   PASS
 Dominant climax                         PASS
 Broad C-minor release                   PASS
@@ -906,12 +1056,15 @@ Gradual return to Pattern 00 feel       PASS
 ## Completion State
 
 ```text
-All patterns composed:                  YES
+Unique patterns composed:               11
+Order positions:                        18
+Approximate runtime:                    1 minute 59 seconds
 All patterns entered:                   YES
-All patterns auditioned:                YES
+All patterns individually auditioned:   YES
 All patterns accepted:                  YES
+Extended in-editor arrangement:         PASS
 Final sample identity locked:           YES
-Final composition phase complete:       YES
+Composition phase complete:             YES
 Exported MOD reopen test:               PENDING
 Full two-cycle post-export test:        PENDING
 Secondary-player compatibility test:    OPTIONAL / PENDING
@@ -919,14 +1072,14 @@ Secondary-player compatibility test:    OPTIONAL / PENDING
 
 ## Resume Instruction
 
-When resuming this project, do not rewrite the composition by default.
+Do not rewrite the composition by default. The extended arrangement and Pattern 01 -> 0A smoothing patch are accepted.
 
 Resume at final production:
 
 ```text
 1. Record exact final sample metadata from MilkyTracker.
-2. Save the working master and export coldboot.mod.
-3. Reopen coldboot.mod and perform the post-export loop/compatibility checks.
+2. Save the extended working master and export coldboot.mod.
+3. Reopen coldboot.mod and perform the post-export two-cycle compatibility checks.
 ```
 
-The current MilkyTracker module remains the definitive record of the final mix.
+The current MilkyTracker module remains the definitive record of the final mix, exact loop points, finetunes, and any last by-ear volume adjustments.
